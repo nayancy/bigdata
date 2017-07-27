@@ -1,0 +1,10 @@
+Item_Master = LOAD 'case1/item_master.txt' USING PigStorage(',') AS (Item_Number:chararray, Item_Department:chararray, Item_Ind:chararray, Pack_Ind:int, Pack_Number:chararray, Item_Cost1:int) ;
+Sales_History_Temp = LOAD 'case1/sales_history_temp' USING PigStorage(',') AS (TId:chararray, Day:chararray, Item_Number:chararray, Quantity:int, Item_Ind:chararray, Pack_Ind:int, Pack_Number:chararray, Item_Cost2:int);
+Sales_History_Temp = JOIN Sales_History_Temp by Item_Number LEFT,Item_Master by Pack_Number;
+Sales_History_Temp2 = FILTER Sales_History_Temp BY ($5==1) ;
+Sales_History_Temp3 = FILTER Sales_History_Temp BY ($5!=1) ;
+Sales_History_Temp2 = FOREACH Sales_History_Temp2 GENERATE $0,$1,$8,$3,$10,$13;
+Sales_History_Temp3 = FOREACH Sales_History_Temp3 GENERATE $0,$1,$2,$3,$4,$7;
+Sales_History_Temp = UNION Sales_History_Temp2,Sales_History_Temp3;
+STORE Sales_History_Temp into 'case1/sales_history_temp2' USING PigStorage(',');
+DUMP Sales_History_Temp;

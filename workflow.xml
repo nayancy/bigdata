@@ -1,0 +1,138 @@
+<workflow-app xmlns="uri:oozie:workflow:0.2" name="java-main-wf">
+
+    <start to="Check"/>
+
+    <action name="Check">
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <main-class>test.example.Check</main-class>
+	    <capture-output/>
+        </java>
+        <ok to="PIG1"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG1">
+	<pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig1.pig</script>
+        </pig>
+        <ok to="PIG2"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG2">
+	<pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp2"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig2.pig</script>
+        </pig>
+        <ok to="decide"/>
+        <error to="fail"/>
+    </action>
+
+    <decision name="decide">
+	<switch>
+	    <case to="PIG3"> ${wf:actionData('Check')['W'] eq '1'}</case>
+	    <default to="FS1"/>   
+	</switch>
+    </decision>
+
+    <action name="PIG3">
+	<pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp3"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig3.pig</script>
+        </pig>
+        <ok to="PIG4"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="FS1">
+	<fs>
+	<move source='${nameNode}/user/nitinc/case1/sales_history_temp2' target='${nameNode}/user/nitinc/case1/sales_history_temp3'/>
+	</fs>
+	<ok to="PIG4"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG4">
+	<pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp4"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig4.pig</script>
+        </pig>
+        <ok to="HIVE1"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="HIVE1">
+	<hive xmlns="uri:oozie:hive-action:0.2">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare> <delete path="${nameNode}/user/${wf:user()}/case1/out"/> </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>hive1.q</script>
+            <param>INPUT=/user/${wf:user()}/case1/sales_history_temp4</param>
+            <param>OUTPUT=/user/${wf:user()}/case1/out</param>
+        </hive>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+
+   
+    <kill name="fail">
+        <message>Java failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+    <end name="end"/>
+
+</workflow-app>
