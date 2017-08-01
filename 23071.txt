@@ -1,0 +1,1426 @@
+guptanayancy@e2e-27-153:~$ hadoop fs -rmr /user/guptanayancy/transactions_data
+rmr: DEPRECATED: Please use 'rm -r' instead.
+17/07/23 15:09:51 INFO fs.TrashPolicyDefault: Moved: 'hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/transactions_data' to trash at: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/.Trash/Current/user/guptanayancy/transactions_data
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /user/guptanayancy/
+Found 8 items
+drwx------   - guptanayancy labusers          0 2017-07-23 15:09 /user/guptanayancy/.Trash
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 /user/guptanayancy/.sparkStaging
+drwx------   - guptanayancy labusers          0 2017-07-23 14:55 /user/guptanayancy/.staging
+-rw-r--r--   3 guptanayancy labusers  111503503 2017-07-22 16:53 /user/guptanayancy/apache.access.log.PROJECT
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:55 /user/guptanayancy/case1
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:56 /user/guptanayancy/oozie-oozi
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 /user/guptanayancy/sparksql
+-rw-r--r--   3 guptanayancy labusers         42 2017-07-15 18:33 /user/guptanayancy/sql.txt
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy -P --table transactions  --target-dir transactions_data
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 15:12:03 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+Enter password:
+17/07/23 15:12:24 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+17/07/23 15:12:24 INFO tool.CodeGenTool: Beginning code generation
+Sun Jul 23 15:12:25 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 15:12:25 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:12:25 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:12:25 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce
+Note: /tmp/sqoop-guptanayancy/compile/3326ea15c33e23a2f75762e6629ea8d6/transactions.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+17/07/23 15:12:26 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-guptanayancy/compile/3326ea15c33e23a2f75762e6629ea8d6/transactions.jar
+17/07/23 15:12:26 WARN manager.MySQLManager: It looks like you are importing from mysql.
+17/07/23 15:12:26 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+17/07/23 15:12:26 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+17/07/23 15:12:26 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+17/07/23 15:12:26 ERROR tool.ImportTool: Import failed: No primary key could be found for table transactions. Please specify one with --split-by or perform a sequential import with '-m 1'.
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy -P --table transactions --split-by id  --target-dir transactions_data
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 15:15:44 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+Enter password:
+17/07/23 15:16:05 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+17/07/23 15:16:05 INFO tool.CodeGenTool: Beginning code generation
+Sun Jul 23 15:16:05 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 15:16:05 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:16:05 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:16:05 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce
+Note: /tmp/sqoop-guptanayancy/compile/5d0159b4def52411a1d8dbb5fd3418a6/transactions.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+17/07/23 15:16:07 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-guptanayancy/compile/5d0159b4def52411a1d8dbb5fd3418a6/transactions.jar
+17/07/23 15:16:07 WARN manager.MySQLManager: It looks like you are importing from mysql.
+17/07/23 15:16:07 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+17/07/23 15:16:07 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+17/07/23 15:16:07 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+17/07/23 15:16:07 INFO mapreduce.ImportJobBase: Beginning import of transactions
+17/07/23 15:16:07 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+17/07/23 15:16:08 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+17/07/23 15:16:08 INFO client.RMProxy: Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+Sun Jul 23 15:16:10 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 15:16:10 INFO db.DBInputFormat: Using read commited transaction isolation
+17/07/23 15:16:10 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: SELECT MIN(`id`), MAX(`id`) FROM `transactions`
+17/07/23 15:16:11 WARN db.TextSplitter: Generating splits for a textual index column.
+17/07/23 15:16:11 WARN db.TextSplitter: If your database sorts in a case-insensitive order, this may result in a partial import or duplicate records.
+17/07/23 15:16:11 WARN db.TextSplitter: You are strongly encouraged to choose an integral split column.
+17/07/23 15:16:11 INFO mapreduce.JobSubmitter: number of splits:4
+17/07/23 15:16:11 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1500551408671_2108
+17/07/23 15:16:11 INFO impl.YarnClientImpl: Submitted application application_1500551408671_2108
+17/07/23 15:16:11 INFO mapreduce.Job: The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2108/
+17/07/23 15:16:11 INFO mapreduce.Job: Running job: job_1500551408671_2108
+17/07/23 15:16:20 INFO mapreduce.Job: Job job_1500551408671_2108 running in uber mode : false
+17/07/23 15:16:20 INFO mapreduce.Job:  map 0% reduce 0%
+17/07/23 15:16:27 INFO mapreduce.Job: Task Id : attempt_1500551408671_2108_m_000003_0, Status : FAILED
+Error: org.apache.hadoop.hdfs.protocol.DSQuotaExceededException: The DiskSpace quota of /user/guptanayancy is exceeded: quota = 2147483648 B = 2 GB but diskspace consumed = 2207744060 B = 2.06 GB
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyDiskspaceQuota(DirectoryWithQuotaFeature.java:149)
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyQuota(DirectoryWithQuotaFeature.java:159)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.verifyQuota(FSDirectory.java:2001)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1868)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1843)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.addBlock(FSDirectory.java:441)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.saveAllocatedBlock(FSNamesystem.java:3806)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3394)
+        at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:683)
+        at org.apache.hadoop.hdfs.server.namenode.AuthorizationProviderProxyClientProtocol.addBlock(AuthorizationProviderProxyClientProtocol.java:214)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:495)
+        at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:617)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1073)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2220)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2216)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:415)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1920)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2214)
+
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+        at org.apache.hadoop.ipc.RemoteException.instantiateException(RemoteException.java:106)
+        at org.apache.hadoop.ipc.RemoteException.unwrapRemoteException(RemoteException.java:73)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1815)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1608)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:772)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.protocol.DSQuotaExceededException): The DiskSpace quota of /user/guptanayancy is exceeded: quota = 2147483648 B = 2 GB but diskspace consumed = 2207744060 B = 2.06 GB
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyDiskspaceQuota(DirectoryWithQuotaFeature.java:149)
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyQuota(DirectoryWithQuotaFeature.java:159)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.verifyQuota(FSDirectory.java:2001)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1868)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1843)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.addBlock(FSDirectory.java:441)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.saveAllocatedBlock(FSNamesystem.java:3806)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3394)
+        at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:683)
+        at org.apache.hadoop.hdfs.server.namenode.AuthorizationProviderProxyClientProtocol.addBlock(AuthorizationProviderProxyClientProtocol.java:214)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:495)
+        at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:617)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1073)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2220)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2216)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:415)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1920)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2214)
+
+        at org.apache.hadoop.ipc.Client.call(Client.java:1502)
+        at org.apache.hadoop.ipc.Client.call(Client.java:1439)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:230)
+        at com.sun.proxy.$Proxy17.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.addBlock(ClientNamenodeProtocolTranslatorPB.java:413)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:256)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:104)
+        at com.sun.proxy.$Proxy18.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1812)
+        ... 2 more
+
+17/07/23 15:16:28 INFO mapreduce.Job:  map 50% reduce 0%
+17/07/23 15:16:29 INFO mapreduce.Job:  map 75% reduce 0%
+17/07/23 15:16:35 INFO mapreduce.Job:  map 100% reduce 0%
+17/07/23 15:16:35 INFO mapreduce.Job: Job job_1500551408671_2108 completed successfully
+17/07/23 15:16:35 INFO mapreduce.Job: Counters: 33
+        File System Counters
+                FILE: Number of bytes read=0
+                FILE: Number of bytes written=615164
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=529
+                HDFS: Number of bytes written=60317773
+                HDFS: Number of read operations=16
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=8
+        Job Counters
+                Failed map tasks=1
+                Launched map tasks=5
+                Other local map tasks=5
+                Total time spent by all maps in occupied slots (ms)=121976
+                Total time spent by all reduces in occupied slots (ms)=0
+                Total time spent by all map tasks (ms)=30494
+                Total vcore-milliseconds taken by all map tasks=30494
+                Total megabyte-milliseconds taken by all map tasks=62451712
+        Map-Reduce Framework
+                Map input records=1048575
+                Map output records=1048575
+                Input split bytes=529
+                Spilled Records=0
+                Failed Shuffles=0
+                Merged Map outputs=0
+                GC time elapsed (ms)=344
+                CPU time spent (ms)=16810
+                Physical memory (bytes) snapshot=1464127488
+                Virtual memory (bytes) snapshot=6494216192
+                Total committed heap usage (bytes)=2576351232
+                Peak Map Physical memory (bytes)=451104768
+                Peak Map Virtual memory (bytes)=1630801920
+        File Input Format Counters
+                Bytes Read=0
+        File Output Format Counters
+                Bytes Written=60317773
+17/07/23 15:16:35 INFO mapreduce.ImportJobBase: Transferred 57.5235 MB in 27.3553 seconds (2.1028 MB/sec)
+17/07/23 15:16:35 INFO mapreduce.ImportJobBase: Retrieved 1048575 records.
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /user/guptanayancy/
+Found 9 items
+drwx------   - guptanayancy labusers          0 2017-07-23 15:09 /user/guptanayancy/.Trash
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 /user/guptanayancy/.sparkStaging
+drwx------   - guptanayancy labusers          0 2017-07-23 15:16 /user/guptanayancy/.staging
+-rw-r--r--   3 guptanayancy labusers  111503503 2017-07-22 16:53 /user/guptanayancy/apache.access.log.PROJECT
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:55 /user/guptanayancy/case1
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:56 /user/guptanayancy/oozie-oozi
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 /user/guptanayancy/sparksql
+-rw-r--r--   3 guptanayancy labusers         42 2017-07-15 18:33 /user/guptanayancy/sql.txt
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-23 15:16 /user/guptanayancy/transactions_data
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /user/guptanayancy/transactions_data
+Found 5 items
+-rw-r--r--   3 guptanayancy labusers          0 2017-07-23 15:16 /user/guptanayancy/transactions_data/_SUCCESS
+-rw-r--r--   3 guptanayancy labusers    7880230 2017-07-23 15:16 /user/guptanayancy/transactions_data/part-m-00000
+-rw-r--r--   3 guptanayancy labusers    6175607 2017-07-23 15:16 /user/guptanayancy/transactions_data/part-m-00001
+-rw-r--r--   3 guptanayancy labusers   20992989 2017-07-23 15:16 /user/guptanayancy/transactions_data/part-m-00002
+-rw-r--r--   3 guptanayancy labusers   25268947 2017-07-23 15:16 /user/guptanayancy/transactions_data/part-m-00003
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$ hadoop fs -rmr /user/guptanayancy/transactions_data
+rmr: DEPRECATED: Please use 'rm -r' instead.
+17/07/23 15:29:18 INFO fs.TrashPolicyDefault: Moved: 'hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/transactions_data' to trash at: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/.Trash/Current/user/guptanayancy/transactions_data1500803958095
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy -PvwOT67OkP13Yocm --table transactions -m 2  --target-dir transactions_data
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 15:31:16 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+Enter password:
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Error parsing arguments for import:
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Unrecognized argument: vwOT67OkP13Yocm
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Unrecognized argument: --table
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Unrecognized argument: transactions
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Unrecognized argument: -m
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Unrecognized argument: 2
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Unrecognized argument: --target-dir
+17/07/23 15:31:24 ERROR tool.BaseSqoopTool: Unrecognized argument: transactions_data
+
+Try --help for usage instructions.
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy -password vwOT67OkP13Yocm --table transactions -m 2  --target-dir transactions_data
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 15:32:02 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+17/07/23 15:32:02 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
+17/07/23 15:32:03 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+17/07/23 15:32:03 INFO tool.CodeGenTool: Beginning code generation
+Sun Jul 23 15:32:03 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 15:32:03 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:32:03 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:32:03 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce
+Note: /tmp/sqoop-guptanayancy/compile/5a16f536c13d127c2c5f13d2a033da48/transactions.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+17/07/23 15:32:04 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-guptanayancy/compile/5a16f536c13d127c2c5f13d2a033da48/transactions.jar
+17/07/23 15:32:04 WARN manager.MySQLManager: It looks like you are importing from mysql.
+17/07/23 15:32:04 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+17/07/23 15:32:04 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+17/07/23 15:32:04 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+17/07/23 15:32:04 ERROR tool.ImportTool: Import failed: No primary key could be found for table transactions. Please specify one with --split-by or perform a sequential import with '-m 1'.
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy -P --table transactions --split-by id  --target-dir transactions_data
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 15:38:41 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+Enter password:
+17/07/23 15:39:06 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+17/07/23 15:39:06 INFO tool.CodeGenTool: Beginning code generation
+Sun Jul 23 15:39:06 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 15:39:06 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:39:06 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 15:39:06 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce
+Note: /tmp/sqoop-guptanayancy/compile/452581a027380f02cac8e2a48ffa1f74/transactions.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+17/07/23 15:39:08 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-guptanayancy/compile/452581a027380f02cac8e2a48ffa1f74/transactions.jar
+17/07/23 15:39:08 WARN manager.MySQLManager: It looks like you are importing from mysql.
+17/07/23 15:39:08 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+17/07/23 15:39:08 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+17/07/23 15:39:08 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+17/07/23 15:39:08 INFO mapreduce.ImportJobBase: Beginning import of transactions
+17/07/23 15:39:08 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+17/07/23 15:39:09 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+17/07/23 15:39:09 INFO client.RMProxy: Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+Sun Jul 23 15:39:11 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 15:39:11 INFO db.DBInputFormat: Using read commited transaction isolation
+17/07/23 15:39:11 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: SELECT MIN(`id`), MAX(`id`) FROM `transactions`
+17/07/23 15:39:12 WARN db.TextSplitter: Generating splits for a textual index column.
+17/07/23 15:39:12 WARN db.TextSplitter: If your database sorts in a case-insensitive order, this may result in a partial import or duplicate records.
+17/07/23 15:39:12 WARN db.TextSplitter: You are strongly encouraged to choose an integral split column.
+17/07/23 15:39:12 INFO mapreduce.JobSubmitter: number of splits:4
+17/07/23 15:39:12 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1500551408671_2141
+17/07/23 15:39:12 INFO impl.YarnClientImpl: Submitted application application_1500551408671_2141
+17/07/23 15:39:12 INFO mapreduce.Job: The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2141/
+17/07/23 15:39:12 INFO mapreduce.Job: Running job: job_1500551408671_2141
+17/07/23 15:39:19 INFO mapreduce.Job: Job job_1500551408671_2141 running in uber mode : false
+17/07/23 15:39:19 INFO mapreduce.Job:  map 0% reduce 0%
+17/07/23 15:39:27 INFO mapreduce.Job: Task Id : attempt_1500551408671_2141_m_000001_0, Status : FAILED
+Error: org.apache.hadoop.hdfs.protocol.DSQuotaExceededException: The DiskSpace quota of /user/guptanayancy is exceeded: quota = 2147483648 B = 2 GB but diskspace consumed = 2388697379 B = 2.22 GB
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyDiskspaceQuota(DirectoryWithQuotaFeature.java:149)
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyQuota(DirectoryWithQuotaFeature.java:159)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.verifyQuota(FSDirectory.java:2001)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1868)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1843)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.addBlock(FSDirectory.java:441)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.saveAllocatedBlock(FSNamesystem.java:3806)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3394)
+        at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:683)
+        at org.apache.hadoop.hdfs.server.namenode.AuthorizationProviderProxyClientProtocol.addBlock(AuthorizationProviderProxyClientProtocol.java:214)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:495)
+        at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:617)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1073)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2220)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2216)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:415)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1920)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2214)
+
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+        at org.apache.hadoop.ipc.RemoteException.instantiateException(RemoteException.java:106)
+        at org.apache.hadoop.ipc.RemoteException.unwrapRemoteException(RemoteException.java:73)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1815)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1608)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:772)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.protocol.DSQuotaExceededException): The DiskSpace quota of /user/guptanayancy is exceeded: quota = 2147483648 B = 2 GB but diskspace consumed = 2388697379 B = 2.22 GB
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyDiskspaceQuota(DirectoryWithQuotaFeature.java:149)
+        at org.apache.hadoop.hdfs.server.namenode.DirectoryWithQuotaFeature.verifyQuota(DirectoryWithQuotaFeature.java:159)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.verifyQuota(FSDirectory.java:2001)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1868)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.updateCount(FSDirectory.java:1843)
+        at org.apache.hadoop.hdfs.server.namenode.FSDirectory.addBlock(FSDirectory.java:441)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.saveAllocatedBlock(FSNamesystem.java:3806)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3394)
+        at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:683)
+        at org.apache.hadoop.hdfs.server.namenode.AuthorizationProviderProxyClientProtocol.addBlock(AuthorizationProviderProxyClientProtocol.java:214)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:495)
+        at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:617)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1073)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2220)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2216)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:415)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1920)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2214)
+
+        at org.apache.hadoop.ipc.Client.call(Client.java:1502)
+        at org.apache.hadoop.ipc.Client.call(Client.java:1439)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:230)
+        at com.sun.proxy.$Proxy17.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.addBlock(ClientNamenodeProtocolTranslatorPB.java:413)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:256)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:104)
+        at com.sun.proxy.$Proxy18.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1812)
+        ... 2 more
+
+17/07/23 15:39:28 INFO mapreduce.Job:  map 25% reduce 0%
+17/07/23 15:39:29 INFO mapreduce.Job:  map 75% reduce 0%
+17/07/23 15:39:36 INFO mapreduce.Job:  map 100% reduce 0%
+17/07/23 15:39:36 INFO mapreduce.Job: Job job_1500551408671_2141 completed successfully
+17/07/23 15:39:36 INFO mapreduce.Job: Counters: 32
+        File System Counters
+                FILE: Number of bytes read=0
+                FILE: Number of bytes written=615164
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=529
+                HDFS: Number of bytes written=60317773
+                HDFS: Number of read operations=16
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=8
+        Job Counters
+                Failed map tasks=1
+                Launched map tasks=5
+                Other local map tasks=5
+                Total time spent by all maps in occupied slots (ms)=129260
+                Total time spent by all map tasks (ms)=32315
+                Total vcore-milliseconds taken by all map tasks=32315
+                Total megabyte-milliseconds taken by all map tasks=66181120
+        Map-Reduce Framework
+                Map input records=1048575
+                Map output records=1048575
+                Input split bytes=529
+                Spilled Records=0
+                Failed Shuffles=0
+                Merged Map outputs=0
+                GC time elapsed (ms)=308
+                CPU time spent (ms)=16420
+                Physical memory (bytes) snapshot=1687130112
+                Virtual memory (bytes) snapshot=6470045696
+                Total committed heap usage (bytes)=2576351232
+                Peak Map Physical memory (bytes)=448778240
+                Peak Map Virtual memory (bytes)=1622654976
+        File Input Format Counters
+                Bytes Read=0
+        File Output Format Counters
+                Bytes Written=60317773
+17/07/23 15:39:36 INFO mapreduce.ImportJobBase: Transferred 57.5235 MB in 27.2243 seconds (2.1129 MB/sec)
+17/07/23 15:39:36 INFO mapreduce.ImportJobBase: Retrieved 1048575 records.
+guptanayancy@e2e-27-153:~$ vi liv1.txt
+guptanayancy@e2e-27-153:~$ vi liveproject.pig
+guptanayancy@e2e-27-153:~$ pig liveproject.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:02:46,733 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:02:46,734 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500805966712.log
+2017-07-23 16:02:47,712 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/guptanayancy/.pigbootup not found
+2017-07-23 16:02:47,810 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2017-07-23 16:02:47,810 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:47,810 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://e2e-27-137.e2enetworks.net.in:8020
+2017-07-23 16:02:48,239 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,268 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,293 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,320 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,346 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,370 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,396 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,422 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:02:48,449 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 1000: Error during parsing. Encountered " <PATH> "tran1=group "" at line 4, column 1.
+Was expecting one of:
+    <EOF>
+    "cat" ...
+    "clear" ...
+    "fs" ...
+    "sh" ...
+    "cd" ...
+    "cp" ...
+    "copyFromLocal" ...
+    "copyToLocal" ...
+    "dump" ...
+    "\\d" ...
+    "describe" ...
+    "\\de" ...
+    "aliases" ...
+    "explain" ...
+    "\\e" ...
+    "help" ...
+    "history" ...
+    "kill" ...
+    "ls" ...
+    "mv" ...
+    "mkdir" ...
+    "pwd" ...
+    "quit" ...
+    "\\q" ...
+    "register" ...
+    "rm" ...
+    "rmf" ...
+    "set" ...
+    "illustrate" ...
+    "\\i" ...
+    "run" ...
+    "exec" ...
+    "scriptDone" ...
+    "" ...
+    "" ...
+    <EOL> ...
+    ";" ...
+
+Details at logfile: /home/guptanayancy/pig_1500805966712.log
+guptanayancy@e2e-27-153:~$ vi liveproject.pig
+guptanayancy@e2e-27-153:~$ pig liveproject.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:11:00,904 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:11:00,905 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500806460889.log
+2017-07-23 16:11:01,786 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/guptanayancy/.pigbootup not found
+2017-07-23 16:11:01,863 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2017-07-23 16:11:01,863 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:01,864 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://e2e-27-137.e2enetworks.net.in:8020
+2017-07-23 16:11:02,349 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,376 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,401 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,427 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,448 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,470 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,495 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,520 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:02,546 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 1000: Error during parsing. Encountered " <PATH> "tran1=group "" at line 4, column 1.
+Was expecting one of:
+    <EOF>
+    "cat" ...
+    "clear" ...
+    "fs" ...
+    "sh" ...
+    "cd" ...
+    "cp" ...
+    "copyFromLocal" ...
+    "copyToLocal" ...
+    "dump" ...
+    "\\d" ...
+    "describe" ...
+    "\\de" ...
+    "aliases" ...
+    "explain" ...
+    "\\e" ...
+    "help" ...
+    "history" ...
+    "kill" ...
+    "ls" ...
+    "mv" ...
+    "mkdir" ...
+    "pwd" ...
+    "quit" ...
+    "\\q" ...
+    "register" ...
+    "rm" ...
+    "rmf" ...
+    "set" ...
+    "illustrate" ...
+    "\\i" ...
+    "run" ...
+    "exec" ...
+    "scriptDone" ...
+    "" ...
+    "" ...
+    <EOL> ...
+    ";" ...
+
+Details at logfile: /home/guptanayancy/pig_1500806460889.log
+guptanayancy@e2e-27-153:~$ vi liveproject.pig
+guptanayancy@e2e-27-153:~$ pig liveproject.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:11:54,920 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:11:54,921 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500806514905.log
+2017-07-23 16:11:55,818 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/guptanayancy/.pigbootup not found
+2017-07-23 16:11:55,895 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2017-07-23 16:11:55,895 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:55,895 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://e2e-27-137.e2enetworks.net.in:8020
+2017-07-23 16:11:56,365 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,394 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,420 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,446 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,470 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,493 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,521 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,547 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:11:56,574 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 1000: Error during parsing. Encountered " <PATH> "tran1=group "" at line 4, column 1.
+Was expecting one of:
+    <EOF>
+    "cat" ...
+    "clear" ...
+    "fs" ...
+    "sh" ...
+    "cd" ...
+    "cp" ...
+    "copyFromLocal" ...
+    "copyToLocal" ...
+    "dump" ...
+    "\\d" ...
+    "describe" ...
+    "\\de" ...
+    "aliases" ...
+    "explain" ...
+    "\\e" ...
+    "help" ...
+    "history" ...
+    "kill" ...
+    "ls" ...
+    "mv" ...
+    "mkdir" ...
+    "pwd" ...
+    "quit" ...
+    "\\q" ...
+    "register" ...
+    "rm" ...
+    "rmf" ...
+    "set" ...
+    "illustrate" ...
+    "\\i" ...
+    "run" ...
+    "exec" ...
+    "scriptDone" ...
+    "" ...
+    "" ...
+    <EOL> ...
+    ";" ...
+
+Details at logfile: /home/guptanayancy/pig_1500806514905.log
+guptanayancy@e2e-27-153:~$ cat pig_1500806514905.log
+Pig Stack Trace
+---------------
+ERROR 1000: Error during parsing. Encountered " <PATH> "tran1=group "" at line 4, column 1.
+Was expecting one of:
+    <EOF>
+    "cat" ...
+    "clear" ...
+    "fs" ...
+    "sh" ...
+    "cd" ...
+    "cp" ...
+    "copyFromLocal" ...
+    "copyToLocal" ...
+    "dump" ...
+    "\\d" ...
+    "describe" ...
+    "\\de" ...
+    "aliases" ...
+    "explain" ...
+    "\\e" ...
+    "help" ...
+    "history" ...
+    "kill" ...
+    "ls" ...
+    "mv" ...
+    "mkdir" ...
+    "pwd" ...
+    "quit" ...
+    "\\q" ...
+    "register" ...
+    "rm" ...
+    "rmf" ...
+    "set" ...
+    "illustrate" ...
+    "\\i" ...
+    "run" ...
+    "exec" ...
+    "scriptDone" ...
+    "" ...
+    "" ...
+    <EOL> ...
+    ";" ...
+
+
+org.apache.pig.tools.pigscript.parser.ParseException: Encountered " <PATH> "tran1=group "" at line 4, column 1.
+Was expecting one of:
+    <EOF>
+    "cat" ...
+    "clear" ...
+    "fs" ...
+    "sh" ...
+    "cd" ...
+    "cp" ...
+    "copyFromLocal" ...
+    "copyToLocal" ...
+    "dump" ...
+    "\\d" ...
+    "describe" ...
+    "\\de" ...
+    "aliases" ...
+    "explain" ...
+    "\\e" ...
+    "help" ...
+    "history" ...
+    "kill" ...
+    "ls" ...
+    "mv" ...
+    "mkdir" ...
+    "pwd" ...
+    "quit" ...
+    "\\q" ...
+    "register" ...
+    "rm" ...
+    "rmf" ...
+    "set" ...
+    "illustrate" ...
+    "\\i" ...
+    "run" ...
+    "exec" ...
+    "scriptDone" ...
+    "" ...
+    "" ...
+    <EOL> ...
+    ";" ...
+
+        at org.apache.pig.tools.pigscript.parser.PigScriptParser.generateParseException(PigScriptParser.java:1428)
+        at org.apache.pig.tools.pigscript.parser.PigScriptParser.handle_invalid_command(PigScriptParser.java:1236)
+        at org.apache.pig.tools.pigscript.parser.PigScriptParser.parse(PigScriptParser.java:710)
+        at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:198)
+        at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:173)
+        at org.apache.pig.tools.grunt.Grunt.exec(Grunt.java:84)
+        at org.apache.pig.Main.run(Main.java:613)
+        at org.apache.pig.Main.main(Main.java:158)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+================================================================================
+guptanayancy@e2e-27-153:~$ vi liveproject.pig
+guptanayancy@e2e-27-153:~$ pig liveproject.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:13:49,119 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:13:49,119 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500806629102.log
+2017-07-23 16:13:50,026 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/guptanayancy/.pigbootup not found
+2017-07-23 16:13:50,101 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2017-07-23 16:13:50,101 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,102 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://e2e-27-137.e2enetworks.net.in:8020
+2017-07-23 16:13:50,529 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,557 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,582 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,607 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,630 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,654 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,680 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:13:50,706 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+guptanayancy@e2e-27-153:~$ dump transactions;
+The program 'dump' is currently not installed. To run 'dump' please ask your administrator to install the package 'dump'
+guptanayancy@e2e-27-153:~$ custGroup = GROUP transactions BY id;
+custGroup: command not found
+guptanayancy@e2e-27-153:~$ vi live1project.pig
+guptanayancy@e2e-27-153:~$ pig live1projcect.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:22:14,231 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:22:14,232 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500807134215.log
+2017-07-23 16:22:15,160 [main] ERROR org.apache.pig.Main - ERROR 2997: Encountered IOException. File live1projcect.pig does not exist
+Details at logfile: /home/guptanayancy/pig_1500807134215.log
+guptanayancy@e2e-27-153:~$ pig live1project.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:22:55,271 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:22:55,272 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500807175255.log
+2017-07-23 16:22:56,168 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/guptanayancy/.pigbootup not found
+2017-07-23 16:22:56,243 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2017-07-23 16:22:56,243 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,243 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://e2e-27-137.e2enetworks.net.in:8020
+2017-07-23 16:22:56,673 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,699 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,723 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,749 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,772 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,796 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,824 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:56,850 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:22:57,472 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY,ORDER_BY,LIMIT
+2017-07-23 16:22:57,509 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, DuplicateForEachColumnRewrite, GroupByConstParallelSetter, ImplicitSplitInserter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NewPartitionFilterOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter], RULES_DISABLED=[FilterLogicExpressionSimplifier, PartitionFilterOptimizer]}
+2017-07-23 16:22:57,646 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2017-07-23 16:22:57,671 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.CombinerOptimizer - Choosing to move algebraic foreach to combiner
+2017-07-23 16:22:57,695 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 4
+2017-07-23 16:22:57,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 4
+2017-07-23 16:22:57,750 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:22:57,898 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2017-07-23 16:22:57,956 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+2017-07-23 16:22:57,956 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2017-07-23 16:22:57,956 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2017-07-23 16:22:57,958 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2017-07-23 16:22:57,958 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2017-07-23 16:22:57,961 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=-1
+2017-07-23 16:22:57,961 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Could not estimate number of reducers and no requested or default parallelism set. Defaulting to 1 reducer.
+2017-07-23 16:22:57,961 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2017-07-23 16:22:57,961 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2017-07-23 16:22:58,571 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job3568944188270053101.jar
+2017-07-23 16:23:02,513 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job3568944188270053101.jar created
+2017-07-23 16:23:02,513 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+2017-07-23 16:23:02,533 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2017-07-23 16:23:02,539 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2017-07-23 16:23:02,539 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2017-07-23 16:23:02,539 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2017-07-23 16:23:02,618 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2017-07-23 16:23:02,619 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+2017-07-23 16:23:02,633 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:23:02,649 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:23:03,039 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Cleaning up the staging area /user/guptanayancy/.staging/job_1500551408671_2404
+2017-07-23 16:23:03,044 [JobControl] WARN  org.apache.hadoop.security.UserGroupInformation - PriviledgedActionException as:guptanayancy (auth:SIMPLE) cause:org.apache.pig.backend.executionengine.ExecException: ERROR 2118: Input path does not exist: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/user/guptanayancy/transactions_data
+2017-07-23 16:23:03,045 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob - PigLatin:live1project.pig got an error while submitting
+org.apache.pig.backend.executionengine.ExecException: ERROR 2118: Input path does not exist: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/user/guptanayancy/transactions_data
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigInputFormat.getSplits(PigInputFormat.java:288)
+        at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:305)
+        at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:322)
+        at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:200)
+        at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1307)
+        at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1304)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:415)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1920)
+        at org.apache.hadoop.mapreduce.Job.submit(Job.java:1304)
+        at org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob.submit(ControlledJob.java:335)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.pig.backend.hadoop23.PigJobControl.submit(PigJobControl.java:128)
+        at org.apache.pig.backend.hadoop23.PigJobControl.run(PigJobControl.java:191)
+        at java.lang.Thread.run(Thread.java:745)
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher$1.run(MapReduceLauncher.java:270)
+Caused by: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/user/guptanayancy/transactions_data
+        at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:323)
+        at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:265)
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigTextInputFormat.listStatus(PigTextInputFormat.java:36)
+        at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:387)
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigInputFormat.getSplits(PigInputFormat.java:274)
+        ... 18 more
+2017-07-23 16:23:03,122 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1500551408671_2404
+2017-07-23 16:23:03,122 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases custGroup,custSpendings,transactions
+2017-07-23 16:23:03,122 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: transactions[1,15],transactions[-1,-1],custSpendings[5,16],custGroup[4,12] C: custSpendings[5,16],custGroup[4,12] R: custSpendings[5,16]
+2017-07-23 16:23:03,126 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2017-07-23 16:23:08,136 [main] WARN  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Ooops! Some job has failed! Specify -stop_on_failure if you want Pig to stop immediately on failure.
+2017-07-23 16:23:08,136 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - job job_1500551408671_2404 has failed! Stop running all dependent jobs
+2017-07-23 16:23:08,136 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2017-07-23 16:23:08,234 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Could not get Job info from RM for job job_1500551408671_2404. Redirecting to job history server.
+2017-07-23 16:23:08,276 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Could not get Job info from RM for job job_1500551408671_2404. Redirecting to job history server.
+2017-07-23 16:23:08,295 [main] ERROR org.apache.pig.tools.pigstats.PigStatsUtil - 1 map reduce job(s) failed!
+2017-07-23 16:23:08,297 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics:
+
+HadoopVersion   PigVersion      UserId  StartedAt       FinishedAt      Features
+2.6.0-cdh5.11.1 0.12.0-cdh5.11.1        guptanayancy    2017-07-23 16:22:57     2017-07-23 16:23:08     GROUP_BY,ORDER_BY,LIMIT
+
+Failed!
+
+Failed Jobs:
+JobId   Alias   Feature Message Outputs
+job_1500551408671_2404  custGroup,custSpendings,transactions    GROUP_BY,COMBINER       Message: org.apache.pig.backend.executionengine.ExecException: ERROR 2118: Input path does not exist: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/user/guptanayancy/transactions_data
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigInputFormat.getSplits(PigInputFormat.java:288)
+        at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:305)
+        at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:322)
+        at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:200)
+        at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1307)
+        at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1304)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:415)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1920)
+        at org.apache.hadoop.mapreduce.Job.submit(Job.java:1304)
+        at org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob.submit(ControlledJob.java:335)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.pig.backend.hadoop23.PigJobControl.submit(PigJobControl.java:128)
+        at org.apache.pig.backend.hadoop23.PigJobControl.run(PigJobControl.java:191)
+        at java.lang.Thread.run(Thread.java:745)
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher$1.run(MapReduceLauncher.java:270)
+Caused by: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/user/guptanayancy/transactions_data
+        at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:323)
+        at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:265)
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigTextInputFormat.listStatus(PigTextInputFormat.java:36)
+        at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:387)
+        at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigInputFormat.getSplits(PigInputFormat.java:274)
+        ... 18 more
+
+
+Input(s):
+Failed to read data from "hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/user/guptanayancy/transactions_data"
+
+Output(s):
+
+Counters:
+Total records written : 0
+Total bytes written : 0
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1500551408671_2404  ->      null,
+null    ->      null,
+null    ->      null,
+null
+
+
+2017-07-23 16:23:08,297 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Failed!
+2017-07-23 16:23:08,301 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 1066: Unable to open iterator for alias top10Cust
+Details at logfile: /home/guptanayancy/pig_1500807175255.log
+guptanayancy@e2e-27-153:~$ vi live1project.pig
+guptanayancy@e2e-27-153:~$ hadoop fs -ls
+Found 9 items
+drwx------   - guptanayancy labusers          0 2017-07-23 15:30 .Trash
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 .sparkStaging
+drwx------   - guptanayancy labusers          0 2017-07-23 16:23 .staging
+-rw-r--r--   3 guptanayancy labusers  111503503 2017-07-22 16:53 apache.access.log.PROJECT
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:55 case1
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:56 oozie-oozi
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 sparksql
+-rw-r--r--   3 guptanayancy labusers         42 2017-07-15 18:33 sql.txt
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-23 15:39 transactions_data
+guptanayancy@e2e-27-153:~$ pig live1project.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:24:31,905 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:24:31,906 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500807271889.log
+2017-07-23 16:24:32,804 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/guptanayancy/.pigbootup not found
+2017-07-23 16:24:32,912 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2017-07-23 16:24:32,912 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:32,912 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://e2e-27-137.e2enetworks.net.in:8020
+2017-07-23 16:24:33,327 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:33,353 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:33,377 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:33,402 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:33,425 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:33,449 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:33,474 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:33,499 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:34,114 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY,ORDER_BY,LIMIT
+2017-07-23 16:24:34,149 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, DuplicateForEachColumnRewrite, GroupByConstParallelSetter, ImplicitSplitInserter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NewPartitionFilterOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter], RULES_DISABLED=[FilterLogicExpressionSimplifier, PartitionFilterOptimizer]}
+2017-07-23 16:24:34,300 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2017-07-23 16:24:34,325 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.CombinerOptimizer - Choosing to move algebraic foreach to combiner
+2017-07-23 16:24:34,347 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 4
+2017-07-23 16:24:34,347 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 4
+2017-07-23 16:24:34,401 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:24:34,553 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2017-07-23 16:24:34,609 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+2017-07-23 16:24:34,610 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2017-07-23 16:24:34,610 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2017-07-23 16:24:34,611 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2017-07-23 16:24:34,612 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2017-07-23 16:24:34,621 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=60317773
+2017-07-23 16:24:34,621 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2017-07-23 16:24:34,621 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2017-07-23 16:24:35,225 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job484435503499743071.jar
+2017-07-23 16:24:39,121 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job484435503499743071.jar created
+2017-07-23 16:24:39,122 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+2017-07-23 16:24:39,141 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2017-07-23 16:24:39,148 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2017-07-23 16:24:39,148 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2017-07-23 16:24:39,148 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2017-07-23 16:24:39,212 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2017-07-23 16:24:39,213 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+2017-07-23 16:24:39,222 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:24:39,243 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:24:39,631 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 4
+2017-07-23 16:24:39,631 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 4
+2017-07-23 16:24:39,648 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2017-07-23 16:24:39,704 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2017-07-23 16:24:39,881 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1500551408671_2409
+2017-07-23 16:24:40,088 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1500551408671_2409
+2017-07-23 16:24:40,118 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2409/
+2017-07-23 16:24:40,118 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1500551408671_2409
+2017-07-23 16:24:40,118 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases custGroup,custSpendings,transactions
+2017-07-23 16:24:40,118 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: transactions[1,15],transactions[-1,-1],custSpendings[5,16],custGroup[4,12] C: custSpendings[5,16],custGroup[4,12] R: custSpendings[5,16]
+2017-07-23 16:24:40,159 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2017-07-23 16:24:57,607 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 12% complete
+2017-07-23 16:25:04,048 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 25% complete
+2017-07-23 16:25:10,562 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2017-07-23 16:25:10,728 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2017-07-23 16:25:10,749 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2017-07-23 16:25:10,749 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2017-07-23 16:25:10,749 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2017-07-23 16:25:10,753 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=26394
+2017-07-23 16:25:10,754 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2017-07-23 16:25:11,189 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job879552806258545106.jar
+2017-07-23 16:25:14,912 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job879552806258545106.jar created
+2017-07-23 16:25:14,922 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2017-07-23 16:25:14,923 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2017-07-23 16:25:14,923 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2017-07-23 16:25:14,923 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2017-07-23 16:25:14,942 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2017-07-23 16:25:14,946 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:25:14,957 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:25:15,163 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-07-23 16:25:15,163 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2017-07-23 16:25:15,163 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2017-07-23 16:25:15,209 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2017-07-23 16:25:15,265 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1500551408671_2414
+2017-07-23 16:25:15,317 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1500551408671_2414
+2017-07-23 16:25:15,321 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2414/
+2017-07-23 16:25:15,443 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1500551408671_2414
+2017-07-23 16:25:15,444 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases custSpendingsSort
+2017-07-23 16:25:15,444 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: custSpendingsSort[6,20] C:  R:
+2017-07-23 16:25:25,347 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 37% complete
+2017-07-23 16:25:31,271 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2017-07-23 16:25:35,724 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2017-07-23 16:25:35,740 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2017-07-23 16:25:35,740 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2017-07-23 16:25:35,740 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2017-07-23 16:25:36,233 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job1149556073806919884.jar
+2017-07-23 16:25:39,905 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job1149556073806919884.jar created
+2017-07-23 16:25:39,913 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2017-07-23 16:25:39,914 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2017-07-23 16:25:39,914 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2017-07-23 16:25:39,914 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2017-07-23 16:25:39,932 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2017-07-23 16:25:39,935 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:25:39,945 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:25:40,124 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-07-23 16:25:40,124 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2017-07-23 16:25:40,124 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2017-07-23 16:25:40,166 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2017-07-23 16:25:40,211 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1500551408671_2418
+2017-07-23 16:25:40,258 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1500551408671_2418
+2017-07-23 16:25:40,262 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2418/
+2017-07-23 16:25:40,432 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1500551408671_2418
+2017-07-23 16:25:40,433 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases custSpendingsSort
+2017-07-23 16:25:40,433 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: custSpendingsSort[6,20] C:  R:
+2017-07-23 16:25:50,884 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 62% complete
+2017-07-23 16:25:56,797 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 75% complete
+2017-07-23 16:26:00,696 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2017-07-23 16:26:00,719 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2017-07-23 16:26:00,720 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2017-07-23 16:26:00,720 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2017-07-23 16:26:01,183 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job5221933133553769946.jar
+2017-07-23 16:26:04,783 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job5221933133553769946.jar created
+2017-07-23 16:26:04,790 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2017-07-23 16:26:04,791 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2017-07-23 16:26:04,791 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2017-07-23 16:26:04,791 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2017-07-23 16:26:04,800 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2017-07-23 16:26:04,803 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:26:04,813 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:26:04,979 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-07-23 16:26:04,979 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2017-07-23 16:26:04,979 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2017-07-23 16:26:05,018 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2017-07-23 16:26:05,061 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1500551408671_2422
+2017-07-23 16:26:05,321 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1500551408671_2422
+2017-07-23 16:26:05,325 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2422/
+2017-07-23 16:26:05,325 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1500551408671_2422
+2017-07-23 16:26:05,325 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases custSpendingsSort
+2017-07-23 16:26:05,325 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: custSpendingsSort[6,20] C:  R:
+2017-07-23 16:26:15,086 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 87% complete
+2017-07-23 16:26:25,972 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2017-07-23 16:26:25,999 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics:
+
+HadoopVersion   PigVersion      UserId  StartedAt       FinishedAt      Features
+2.6.0-cdh5.11.1 0.12.0-cdh5.11.1        guptanayancy    2017-07-23 16:24:34     2017-07-23 16:26:25     GROUP_BY,ORDER_BY,LIMIT
+
+Success!
+
+Job Stats (time in seconds):
+JobId   Maps    Reduces MaxMapTime      MinMapTIme      AvgMapTime      MedianMapTime   MaxReduceTime   MinReduceTime   AvgReduceTime   MedianReducetime        Alias  Feature  Outputs
+job_1500551408671_2409  1       1       11      11      11      11      3       3       3       3       custGroup,custSpendings,transactions    GROUP_BY,COMBINER
+job_1500551408671_2414  1       1       3       3       3       3       3       3       3       3       custSpendingsSort       SAMPLER
+job_1500551408671_2418  1       1       3       3       3       3       3       3       3       3       custSpendingsSort       ORDER_BY,COMBINER
+job_1500551408671_2422  1       1       3       3       3       3       3       3       3       3       custSpendingsSort               hdfs://e2e-27-137.e2enetworks.net.in:8020/tmp/temp77825391/tmp-1315874740,
+
+Input(s):
+Successfully read 1048575 records (60318503 bytes) from: "hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/transactions_data"
+
+Output(s):
+Successfully stored 10 records (234 bytes) in: "hdfs://e2e-27-137.e2enetworks.net.in:8020/tmp/temp77825391/tmp-1315874740"
+
+Counters:
+Total records written : 10
+Total bytes written : 234
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1500551408671_2409  ->      job_1500551408671_2414,
+job_1500551408671_2414  ->      job_1500551408671_2418,
+job_1500551408671_2418  ->      job_1500551408671_2422,
+job_1500551408671_2422
+
+
+2017-07-23 16:26:27,140 [main] INFO  org.apache.hadoop.ipc.Client - Retrying connect to server: e2e-27-139.e2enetworks.net.in/101.53.130.139:18881. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2017-07-23 16:26:28,141 [main] INFO  org.apache.hadoop.ipc.Client - Retrying connect to server: e2e-27-139.e2enetworks.net.in/101.53.130.139:18881. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2017-07-23 16:26:29,142 [main] INFO  org.apache.hadoop.ipc.Client - Retrying connect to server: e2e-27-139.e2enetworks.net.in/101.53.130.139:18881. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2017-07-23 16:26:29,249 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2017-07-23 16:26:30,357 [main] INFO  org.apache.hadoop.ipc.Client - Retrying connect to server: e2e-27-144.e2enetworks.net.in/101.53.130.144:26033. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2017-07-23 16:26:31,358 [main] INFO  org.apache.hadoop.ipc.Client - Retrying connect to server: e2e-27-144.e2enetworks.net.in/101.53.130.144:26033. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2017-07-23 16:26:32,360 [main] INFO  org.apache.hadoop.ipc.Client - Retrying connect to server: e2e-27-144.e2enetworks.net.in/101.53.130.144:26033. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2017-07-23 16:26:32,463 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2017-07-23 16:26:32,700 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2017-07-23 16:26:32,811 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2017-07-23 16:26:32,814 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:26:32,814 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2017-07-23 16:26:32,819 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-07-23 16:26:32,819 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+(86252,53592.899837329984)
+(86246,52828.11981391907)
+(57132131,20863.289817154408)
+(83868868,15302.16985589452)
+(67957375,14684.610046138987)
+(58237989,14611.269816048443)
+(91998805,14572.459874942899)
+(94244413,14302.609862526879)
+(54590006,13740.629864683375)
+(56544981,13101.059877915308)
+2017-07-23 16:26:32,898 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 1000: Error during parsing. Lexical error at line 10, column 0.  Encountered: <EOF> after : ""
+Details at logfile: /home/guptanayancy/pig_1500807271889.log
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy -password vwOT67OkP13Yocm --table transactions --hive-import --hive-database guptanayancy
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 16:30:57 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+17/07/23 16:30:57 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
+17/07/23 16:30:57 INFO tool.BaseSqoopTool: Using Hive-specific delimiters for output. You can override
+17/07/23 16:30:57 INFO tool.BaseSqoopTool: delimiters with --fields-terminated-by, etc.
+17/07/23 16:30:57 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+17/07/23 16:30:57 INFO tool.CodeGenTool: Beginning code generation
+Sun Jul 23 16:30:57 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 16:30:57 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 16:30:57 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 16:30:57 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce
+Note: /tmp/sqoop-guptanayancy/compile/cbdf1cf50a9a1eecf7f2ac05d2a394fd/transactions.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+17/07/23 16:30:58 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-guptanayancy/compile/cbdf1cf50a9a1eecf7f2ac05d2a394fd/transactions.jar
+17/07/23 16:30:58 WARN manager.MySQLManager: It looks like you are importing from mysql.
+17/07/23 16:30:58 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+17/07/23 16:30:58 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+17/07/23 16:30:58 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+17/07/23 16:30:58 ERROR tool.ImportTool: Import failed: No primary key could be found for table transactions. Please specify one with --split-by or perform a sequential import with '-m 1'.
+guptanayancy@e2e-27-153:~$ --hive-table transactions_staging -m 1
+--hive-table: command not found
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy -password vwOT67OkP13Yocm --table transactions --hiv-import --hive-database guptanayancy
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 16:32:05 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+17/07/23 16:32:05 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
+17/07/23 16:32:05 ERROR tool.BaseSqoopTool: Error parsing arguments for import:
+17/07/23 16:32:05 ERROR tool.BaseSqoopTool: Unrecognized argument: --hiv-import
+17/07/23 16:32:05 ERROR tool.BaseSqoopTool: Unrecognized argument: --hive-database
+17/07/23 16:32:05 ERROR tool.BaseSqoopTool: Unrecognized argument: guptanayancy
+
+Try --help for usage instructions.
+guptanayancy@e2e-27-153:~$ hadoop fs -ls
+Found 9 items
+drwx------   - guptanayancy labusers          0 2017-07-23 15:30 .Trash
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 .sparkStaging
+drwx------   - guptanayancy labusers          0 2017-07-23 16:26 .staging
+-rw-r--r--   3 guptanayancy labusers  111503503 2017-07-22 16:53 apache.access.log.PROJECT
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:55 case1
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:56 oozie-oozi
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 sparksql
+-rw-r--r--   3 guptanayancy labusers         42 2017-07-15 18:33 sql.txt
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-23 15:39 transactions_data
+guptanayancy@e2e-27-153:~$ hive
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/jars/hive-common-1.1.0-cdh5.11.1.jar!/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> useguptanayancy;
+NoViableAltException(26@[])
+        at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1028)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:201)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:466)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1278)
+        at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1395)
+        at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1207)
+        at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1197)
+        at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:220)
+        at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:172)
+        at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:383)
+        at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:775)
+        at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:693)
+        at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:628)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'useguptanayancy' '<EOF>' '<EOF>'
+hive> use guptanayancy;
+OK
+Time taken: 1.236 seconds
+hive> show tables;
+OK
+empl
+employee
+employee1
+empp
+manager
+mang
+mann
+Time taken: 0.189 seconds, Fetched: 7 row(s)
+hive> exit
+    > ;
+guptanayancy@e2e-27-153:~$ sqoop import --connect jdbc:mysql://101.53.130.146/guptanayancy --username guptanayancy --password vwOT67OkP13Yocm --table transactions --hive-import --hive-database guptanayancy --hive-table transactions_staging -m 1
+Warning: /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+17/07/23 16:37:02 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.11.1
+17/07/23 16:37:02 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
+17/07/23 16:37:02 INFO tool.BaseSqoopTool: Using Hive-specific delimiters for output. You can override
+17/07/23 16:37:02 INFO tool.BaseSqoopTool: delimiters with --fields-terminated-by, etc.
+17/07/23 16:37:02 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+17/07/23 16:37:02 INFO tool.CodeGenTool: Beginning code generation
+Sun Jul 23 16:37:02 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 16:37:02 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 16:37:02 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 16:37:02 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce
+Note: /tmp/sqoop-guptanayancy/compile/595872a65f6b769dfc1def22800d963e/transactions.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+17/07/23 16:37:04 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-guptanayancy/compile/595872a65f6b769dfc1def22800d963e/transactions.jar
+17/07/23 16:37:04 WARN manager.MySQLManager: It looks like you are importing from mysql.
+17/07/23 16:37:04 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+17/07/23 16:37:04 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+17/07/23 16:37:04 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+17/07/23 16:37:04 INFO mapreduce.ImportJobBase: Beginning import of transactions
+17/07/23 16:37:04 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+17/07/23 16:37:05 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+17/07/23 16:37:05 INFO client.RMProxy: Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+Sun Jul 23 16:37:07 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 16:37:07 INFO db.DBInputFormat: Using read commited transaction isolation
+17/07/23 16:37:07 INFO mapreduce.JobSubmitter: number of splits:1
+17/07/23 16:37:07 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1500551408671_2482
+17/07/23 16:37:08 INFO impl.YarnClientImpl: Submitted application application_1500551408671_2482
+17/07/23 16:37:08 INFO mapreduce.Job: The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2482/
+17/07/23 16:37:08 INFO mapreduce.Job: Running job: job_1500551408671_2482
+17/07/23 16:37:15 INFO mapreduce.Job: Job job_1500551408671_2482 running in uber mode : false
+17/07/23 16:37:15 INFO mapreduce.Job:  map 0% reduce 0%
+17/07/23 16:37:25 INFO mapreduce.Job:  map 100% reduce 0%
+17/07/23 16:37:25 INFO mapreduce.Job: Job job_1500551408671_2482 completed successfully
+17/07/23 16:37:25 INFO mapreduce.Job: Counters: 32
+        File System Counters
+                FILE: Number of bytes read=0
+                FILE: Number of bytes written=153658
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=87
+                HDFS: Number of bytes written=60317773
+                HDFS: Number of read operations=4
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=1
+                Other local map tasks=1
+                Total time spent by all maps in occupied slots (ms)=33396
+                Total time spent by all reduces in occupied slots (ms)=0
+                Total time spent by all map tasks (ms)=8349
+                Total vcore-milliseconds taken by all map tasks=8349
+                Total megabyte-milliseconds taken by all map tasks=17098752
+        Map-Reduce Framework
+                Map input records=1048575
+                Map output records=1048575
+                Input split bytes=87
+                Spilled Records=0
+                Failed Shuffles=0
+                Merged Map outputs=0
+                GC time elapsed (ms)=124
+                CPU time spent (ms)=7270
+                Physical memory (bytes) snapshot=456286208
+                Virtual memory (bytes) snapshot=1623957504
+                Total committed heap usage (bytes)=682622976
+                Peak Map Physical memory (bytes)=456286208
+                Peak Map Virtual memory (bytes)=1623957504
+        File Input Format Counters
+                Bytes Read=0
+        File Output Format Counters
+                Bytes Written=60317773
+17/07/23 16:37:25 INFO mapreduce.ImportJobBase: Transferred 57.5235 MB in 20.2406 seconds (2.842 MB/sec)
+17/07/23 16:37:25 INFO mapreduce.ImportJobBase: Retrieved 1048575 records.
+Sun Jul 23 16:37:25 IST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+17/07/23 16:37:25 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `transactions` AS t LIMIT 1
+17/07/23 16:37:25 INFO hive.HiveImport: Loading uploaded data into Hive
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/jars/hive-common-1.1.0-cdh5.11.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.923 seconds
+Loading data to table guptanayancy.transactions_staging
+Table guptanayancy.transactions_staging stats: [numFiles=1, totalSize=60317773]
+OK
+Time taken: 0.649 seconds
+guptanayancy@e2e-27-153:~$
+guptanayancy@e2e-27-153:~$ hive
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/jars/hive-common-1.1.0-cdh5.11.1.jar!/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> use guptanayancy;
+OK
+Time taken: 0.673 seconds
+hive> show tables;
+OK
+empl
+employee
+employee1
+empp
+manager
+mang
+mann
+transactions_staging
+Time taken: 0.176 seconds, Fetched: 8 row(s)
+hive> select * from transactions_staging limit 10;
+OK
+86246   205     7       707     1078778070      12564   3/2/2012        12      OZ      1       7.59
+86246   205     63      6319    107654575       17876   3/2/2012        64      OZ      1       1.59
+86246   205     97      9753    1022027929      0       3/2/2012        1       CT      1       5.99
+86246   205     25      2509    107996777       31373   3/2/2012        16      OZ      1       1.99
+86246   205     55      5555    107684070       32094   3/2/2012        16      OZ      2       10.38
+86246   205     97      9753    1021015020      0       3/2/2012        1       CT      1       7.8
+86246   205     99      9909    104538848       15343   3/2/2012        16      OZ      1       2.49
+86246   205     59      5907    102900020       2012    3/2/2012        16      OZ      1       1.39
+86246   205     9       921     101128414       9209    3/2/2012        4       OZ      2       1.5
+86246   205     73      7344    1068142161      20285   3/2/2012        8       CT      1       5.79
+Time taken: 0.456 seconds, Fetched: 10 row(s)
+hive> select id,sum(purchaseamount) as spending from transactions_staging group by id,order by spending desc limit 10;
+FAILED: ParseException line 1:86 missing EOF at 'by' near 'order'
+hive> select id,sum(purchaseamount) as spending from transactions_staging group by id order by spending desc limit 10;
+Query ID = guptanayancy_20170723164343_b83e4fe7-13af-4e70-8fc2-a0d890a23df2
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1500551408671_2500, Tracking URL = http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2500/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/lib/hadoop/bin/hadoop job  -kill job_1500551408671_2500
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2017-07-23 16:44:03,955 Stage-1 map = 0%,  reduce = 0%
+2017-07-23 16:44:11,359 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.61 sec
+2017-07-23 16:44:17,703 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 5.35 sec
+MapReduce Total cumulative CPU time: 5 seconds 350 msec
+Ended Job = job_1500551408671_2500
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1500551408671_2501, Tracking URL = http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2501/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/lib/hadoop/bin/hadoop job  -kill job_1500551408671_2501
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2017-07-23 16:44:25,459 Stage-2 map = 0%,  reduce = 0%
+2017-07-23 16:44:31,756 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 1.67 sec
+2017-07-23 16:44:37,014 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 3.27 sec
+MapReduce Total cumulative CPU time: 3 seconds 270 msec
+Ended Job = job_1500551408671_2501
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 5.35 sec   HDFS Read: 60325291 HDFS Write: 37850 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 3.27 sec   HDFS Read: 42786 HDFS Write: 270 SUCCESS
+Total MapReduce CPU Time Spent: 8 seconds 620 msec
+OK
+86252   53592.9000000003
+86246   52828.1200000003
+57132131        20863.290000000343
+83868868        15302.169999999785
+67957375        14684.609999999933
+58237989        14611.269999999817
+91998805        14572.459999999865
+94244413        14302.609999999862
+54590006        13740.629999999846
+56544981        13101.059999999883
+Time taken: 41.917 seconds, Fetched: 10 row(s)
+hive> exit
+    > ;
+guptanayancy@e2e-27-153:~$ vi live2project.pig
+guptanayancy@e2e-27-153:~$ pig live2project.pig
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-07-23 16:48:25,048 [main] INFO  org.apache.pig.Main - Apache Pig version 0.12.0-cdh5.11.1 (rUnversioned directory) compiled Jun 01 2017, 10:37:13
+2017-07-23 16:48:25,049 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/guptanayancy/pig_1500808705026.log
+2017-07-23 16:48:26,004 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/guptanayancy/.pigbootup not found
+2017-07-23 16:48:26,099 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2017-07-23 16:48:26,099 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,099 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://e2e-27-137.e2enetworks.net.in:8020
+2017-07-23 16:48:26,514 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,542 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,571 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,599 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,625 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,652 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,681 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:26,709 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:27,370 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY
+2017-07-23 16:48:27,407 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, DuplicateForEachColumnRewrite, GroupByConstParallelSetter, ImplicitSplitInserter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NewPartitionFilterOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter], RULES_DISABLED=[FilterLogicExpressionSimplifier, PartitionFilterOptimizer]}
+2017-07-23 16:48:27,545 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2017-07-23 16:48:27,557 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.CombinerOptimizer - Choosing to move algebraic foreach to combiner
+2017-07-23 16:48:27,576 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+2017-07-23 16:48:27,576 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+2017-07-23 16:48:27,632 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:48:27,784 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2017-07-23 16:48:27,845 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+2017-07-23 16:48:27,845 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2017-07-23 16:48:27,845 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2017-07-23 16:48:27,847 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2017-07-23 16:48:27,847 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2017-07-23 16:48:27,858 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=60317773
+2017-07-23 16:48:27,858 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2017-07-23 16:48:27,858 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2017-07-23 16:48:28,517 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job5007074108081717753.jar
+2017-07-23 16:48:32,373 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job5007074108081717753.jar created
+2017-07-23 16:48:32,373 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+2017-07-23 16:48:32,392 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2017-07-23 16:48:32,398 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2017-07-23 16:48:32,398 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2017-07-23 16:48:32,398 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2017-07-23 16:48:32,466 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2017-07-23 16:48:32,467 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+2017-07-23 16:48:32,476 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at e2e-27-137.e2enetworks.net.in/101.53.130.137:8032
+2017-07-23 16:48:32,496 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:32,894 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 4
+2017-07-23 16:48:32,894 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 4
+2017-07-23 16:48:32,905 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2017-07-23 16:48:32,957 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2017-07-23 16:48:33,134 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1500551408671_2523
+2017-07-23 16:48:33,359 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1500551408671_2523
+2017-07-23 16:48:33,393 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://e2e-27-137.e2enetworks.net.in:19099/proxy/application_1500551408671_2523/
+2017-07-23 16:48:33,393 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1500551408671_2523
+2017-07-23 16:48:33,393 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases custGroup,custSpendings,transactions
+2017-07-23 16:48:33,393 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: transactions[1,15],transactions[-1,-1],custSpendings[5,16],custGroup[4,12] C: custSpendings[5,16],custGroup[4,12] R: custSpendings[5,16]
+2017-07-23 16:48:33,448 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2017-07-23 16:48:50,809 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2017-07-23 16:48:59,136 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2017-07-23 16:48:59,137 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics:
+
+HadoopVersion   PigVersion      UserId  StartedAt       FinishedAt      Features
+2.6.0-cdh5.11.1 0.12.0-cdh5.11.1        guptanayancy    2017-07-23 16:48:27     2017-07-23 16:48:59     GROUP_BY
+
+Success!
+
+Job Stats (time in seconds):
+JobId   Maps    Reduces MaxMapTime      MinMapTIme      AvgMapTime      MedianMapTime   MaxReduceTime   MinReduceTime   AvgReduceTime   MedianReducetime        Alias  Feature  Outputs
+job_1500551408671_2523  1       1       10      10      10      10      3       3       3       3       custGroup,custSpendings,transactions    GROUP_BY,COMBINER      hdfs://e2e-27-137.e2enetworks.net.in:8020/tmp/temp-1528114577/tmp-1312919815,
+
+Input(s):
+Successfully read 1048575 records (60318503 bytes) from: "hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/transactions_data"
+
+Output(s):
+Successfully stored 12 records (270 bytes) in: "hdfs://e2e-27-137.e2enetworks.net.in:8020/tmp/temp-1528114577/tmp-1312919815"
+
+Counters:
+Total records written : 12
+Total bytes written : 270
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1500551408671_2523
+
+
+2017-07-23 16:48:59,249 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2017-07-23 16:48:59,251 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2017-07-23 16:48:59,252 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2017-07-23 16:48:59,260 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-07-23 16:48:59,260 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+(2,1194,3814.6399653851986)
+(3,65062,208104.0280714687)
+(4,245482,767159.3530194685)
+(14,98427,365785.296934329)
+(15,319263,1077677.4602135327)
+(17,123889,394737.396487277)
+(18,210325,693190.203932317)
+(20,92454,291686.07754904777)
+(58,4438,10223.759967654943)
+(88,104758,324290.987072587)
+(95,145003,441778.4061847329)
+(205,34937,106421.01965124905)
+2017-07-23 16:48:59,317 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 1000: Error during parsing. Lexical error at line 8, column 0.  Encountered: <EOF> after : ""
+Details at logfile: /home/guptanayancy/pig_1500808705026.log
+guptanayancy@e2e-27-153:~$ ^C

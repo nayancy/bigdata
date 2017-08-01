@@ -1,0 +1,76 @@
+login as: guptanayancy
+guptanayancy@101.53.130.153's password:
+Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-31-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Sat Jul 22 15:41:40 2017 from 103.62.236.234
+guptanayancy@e2e-27-153:~$ mysql -h 101.53.130.146 -u guptanayancy -p --local-in                                                                                        file
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9052
+Server version: 5.7.18-0ubuntu0.16.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| guptanayancy       |
++--------------------+
+2 rows in set (0.01 sec)
+
+mysql> use guptanayancy;
+Database changed
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| guptanayancy       |
++--------------------+
+2 rows in set (0.01 sec)
+
+mysql> use guptanayancy;
+Database changed
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> CREATE TABLE transactions(id varchar(20),chain varchar(20), dept varchar(20),category varchar(20), company varchar(20),
+    -> brand varchar(20), date1 varchar(10), productsize int, productmeasure varchar(10), purchasequantity int, purchaseamount FLOAT);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> LOAD DATA local INFILE '/home/guptanayancy/transactions_practice.csv' INTO TABLE transactions
+    -> FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+    -> LINES TERMINATED BY '\n';
+Query OK, 1048575 rows affected, 65535 warnings (5.71 sec)
+Records: 1048575  Deleted: 0  Skipped: 0  Warnings: 1048575
+
+mysql> select count(*) from transactions;
++----------+
+| count(*) |
++----------+
+|  1048575 |
++----------+
+1 row in set (0.83 sec)
+
+mysql> show tables;
++------------------------+
+| Tables_in_guptanayancy |
++------------------------+
+| transactions           |
++------------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from tab;
+ERROR 1146 (42S02): Table 'guptanayancy.tab' doesn't exist
+mysql>

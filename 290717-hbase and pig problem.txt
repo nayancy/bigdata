@@ -1,0 +1,279 @@
+-- production table
+
+
+CREATE TABLE transactions_production
+( id string,
+dept string,
+category string,
+company string,
+brand string,
+date1 string,
+productsize int,
+productmeasure string,
+purchasequantity int,
+purchaseamount double)
+PARTITIONED BY (chain   string) CLUSTERED BY(id) INTO 5 BUCKETS
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+
+TOP 10 customer in each chain based on purchase amount-
+
+select b.chain,b.id,b.spent from
+(select a.chain,a.id,a.spent,rank() over(partition by a.chain order by a.spent desc) as rn
+ from 
+(select id,chain,sum(purchaseamount)  as spent from transactions_production 
+group by id,chain)a)b
+where b.rn<=10;
+
+-------chainGroupCustSpedings1=FOREACH chainGroupCust GENERATE group, SUM(transactions.purchaseamount) as spendings;-----without space there willl be an error.
+
+
+tran = LOAD 'transactions_data' USING PigStorage(',') as (id:chararray,chain:chararray,dept:chararray,category:chararray,company:chararray,brand:chararray,date:chararray, productsize:float, productmeasure:chararray, purchasequantity:int, purchaseamount:float);
+chainGroupCust = GROUP tran BY (chain,id);
+chainGroupCustSpedings1 = FOREACH chainGroupCust GENERATE group, SUM(transactions.purchaseamount) as spendings;
+chainGroupCustSpendings2= FOREACH chainGroupCustSpedings1 generate group.chain as chain,group.id as id, spendings;
+chainGroupCustSpendings3= GROUP chainGroupCustSpendings2 BY chain;
+
+
+chainGroupCustSpedings1 = FOREACH chainGroupCustspending GENERATE group, SUM(transactions.purchaseamount) as spendings;-----it haveto run
+
+
+
+
+
+
+------------------------bucketiting is not 
+
+set hive.enforce.bucketing=true;
+set hive.exec.dynamic.partition=true;
+set hive.exec.dynamic.partition.mode=nonstrict;
+
+----by default one static partition is there.
+
+
+
+
+
+INSERT OVERWRITE TABLE transactions_production PARTITION (chain) 
+select id,dept, category, company,brand,date1,productsize,productmeasure,
+purchasequantity,purchaseamount,chain from transactions_staging;
+
+-------------no. of reducers=no of buckets;
+we will put "chain" column in the last in "select id,dept, category, company,brand,date1,productsize,productmeasure,
+purchasequantity,purchaseamount,chain from transactions_staging;" because partition is on the basis of chain.
+
+
+
+
+
+
+show create table transactions_production;
+
+
+hive> dfs -ls hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production;
+Found 12 items
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=14
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=15
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=17
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=18
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=2
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=20
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=205
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=3
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=4
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=58
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=88
+drwxrwxrwt   - guptanayancy hive          0 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=95
+hive> dfs -ls hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=15;
+Found 5 items
+-rwxrwxrwt   3 guptanayancy hive    3174212 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=15/000000_0
+-rwxrwxrwt   3 guptanayancy hive    2441715 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=15/000001_0
+-rwxrwxrwt   3 guptanayancy hive    2113143 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=15/000002_0
+-rwxrwxrwt   3 guptanayancy hive    2778460 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=15/000003_0
+-rwxrwxrwt   3 guptanayancy hive    2046003 2017-07-29 14:26 hdfs://e2e-27-137.e2enetworks.net.in:8020/user/hive/warehouse/guptanayancy.db/transactions_production/chain=15/000004_0
+hive> 
+
+  
+
+
+CREATE TABLE transactions_production1
+( id string,
+dept string,
+category string,
+company string,
+brand string,
+date1 string,
+productsize int,
+productmeasure string,
+purchasequantity int,
+purchaseamount double,
+chain   string)
+ CLUSTERED BY(id) INTO 5 BUCKETS
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+
+------------------------bucketiting is not 
+
+set hive.enforce.bucketing=true;
+set hive.exec.dynamic.partition=true;
+set hive.exec.dynamic.partition.mode=nonstrict;
+
+----by default one static partition is there.
+
+
+
+
+
+INSERT OVERWRITE TABLE transactions_production1 
+select id,dept, category, company,brand,date1,productsize,productmeasure,
+purchasequantity,purchaseamount,chain from transactions_staging;
+
+
+-- Chain Year Monthly 
+
+
+select chain, split(date1,'/')[2] as year1, split(date1,'/')[0] as month1, 
+sum(purchaseamount) as totalsales from transactions_production
+group by chain,split(date1,'/')[0],split(date1,'/')[2];
+
+
+
+select chain, split(date1,'/')[2] as year1, split(date1,'/')[0] as month1, 
+sum(purchaseamount) as totalsales from transactions_production
+group by chain,month1,year1;--will throw error.
+
+
+
+
+
+hbase-----------------------------
+
+
+create 'Retail_guptanayancy_guptanayancy', {NAME=>'CustInfo'},{NAME=>'BrandsPurchased'}
+
+list
+
+
+put table-name, rowkey, colfamily:colname, value
+
+put 'Retail_guptanayancy', '1042', 'CustInfo:name', 'cust1'
+put 'Retail_guptanayancy', '1042', 'CustInfo:age', 43
+put 'Retail_guptanayancy', '1042', 'BrandsPurchased:brand1', 43
+put 'Retail_guptanayancy', '1042', 'BrandsPurchased:brand2', 78
+put 'Retail_guptanayancy', '1042', 'BrandsPurchased:brand3', 29
+put 'Retail_guptanayancy', '1042', 'BrandsPurchased:brand4', 54
+
+
+put 'Retail_guptanayancy', '1041', 'CustInfo:name', 'cust2'
+put 'Retail_guptanayancy', '1041', 'CustInfo:age', 41
+put 'Retail_guptanayancy', '1041', 'BrandsPurchased:brand1', 24
+put 'Retail_guptanayancy', '1041', 'BrandsPurchased:brand3', 73
+
+put 'Retail_guptanayancy', '1043', 'CustInfo:name', 'cust3'
+put 'Retail_guptanayancy', '1043', 'CustInfo:age', 27
+put 'Retail_guptanayancy', '1043', 'BrandsPurchased:brand1', 53
+put 'Retail_guptanayancy', '1043', 'BrandsPurchased:brand5', 21
+put 'Retail_guptanayancy', '1043', 'BrandsPurchased:brand3', 56
+put 'Retail_guptanayancy', '1043', 'BrandsPurchased:brand7', 32
+
+
+put 'Retail_guptanayancy', '1044', 'CustInfo:name', 'cust4'
+put 'Retail_guptanayancy', '1044', 'CustInfo:age', 53
+put 'Retail_guptanayancy', '1044', 'BrandsPurchased:brand2', 98
+put 'Retail_guptanayancy', '1044', 'BrandsPurchased:brand3', 15
+
+
+put 'Retail_guptanayancy', '1045', 'CustInfo:name', 'cust5'
+put 'Retail_guptanayancy', '1045', 'CustInfo:age', 19
+put 'Retail_guptanayancy', '1045', 'BrandsPurchased:brand1', 98
+put 'Retail_guptanayancy', '1045', 'BrandsPurchased:brand2', 44
+put 'Retail_guptanayancy', '1045', 'BrandsPurchased:brand3', 12
+
+scan 'Retail_guptanayancy'
+
+count 'Retail_guptanayancy'
+
+
+
+hbase(main):074:0> quit
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /
+Found 4 items
+drwxr-xr-x   - hbase hbase               0 2017-07-27 18:45 /hbase
+drwxrwxrwx   - hdfs  supergroup          0 2017-07-08 19:25 /rhive
+drwxrwxrwt   - hdfs  supergroup          0 2017-07-29 17:38 /tmp
+drwxr-xr-x   - hdfs  supergroup          0 2017-07-28 17:35 /user
+guptanayancy@e2e-27-153:~$ hadoop fs -ls hbase
+ls: `hbase': No such file or directory
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /hbase
+Found 9 items
+drwxr-xr-x   - hbase hbase          0 2017-07-27 22:34 /hbase/.tmp
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:33 /hbase/MasterProcWALs
+drwxr-xr-x   - hbase hbase          0 2017-07-27 18:45 /hbase/WALs
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:31 /hbase/archive
+drwxr-xr-x   - hbase hbase          0 2017-07-21 10:35 /hbase/corrupt
+drwxr-xr-x   - hbase hbase          0 2017-07-22 20:16 /hbase/data
+-rw-r--r--   3 hbase hbase         42 2017-06-16 02:26 /hbase/hbase.id
+-rw-r--r--   3 hbase hbase          7 2017-06-16 02:26 /hbase/hbase.version
+drwxr-xr-x   - hbase hbase          0 2017-07-29 16:47 /hbase/oldWALs
+guptanayancy@e2e-27-153:~$
+
+
+Found 3 items
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:24 /hbase/data/default/Retail_guptanayancy/.tabledesc
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:24 /hbase/data/default/Retail_guptanayancy/.tmp
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:24 /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4
+Found 4 items
+-rw-r--r--   3 hbase hbase         54 2017-07-29 17:24 /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4/.regioninfo
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:24 /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4/BrandsPurchased
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:24 /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4/CustInfo
+drwxr-xr-x   - hbase hbase          0 2017-07-29 17:24 /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4/recovered.edits
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4/CustInfo
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /hbase/data/default/Retail_guptanayancy/8f39653732f662b75a2f6ce136c679f4/BrandsPurchased
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

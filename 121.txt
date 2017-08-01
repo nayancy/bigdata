@@ -1,0 +1,179 @@
+spark_ 
+
+
+
+pyspark---python cli
+
+exit()
+
+create folder spark_code in locale
+
+create a script map.py
+-----------------------------------
+
+
+#import Libraries
+from pyspark import SparkConf,SparkContext
+
+sc=SparkContext()
+
+##create source RDD,thesame will be used for the coming examples
+sourceRDD=sc.parallelize([51,44,11,12,14,5,6,3,3,1,7,7,11],4)
+
+##transform elements using map
+mapRDD=sourceRDD.map(lambda x:x+1)
+
+##get the results out of RDDusing action collect
+mapResult=mapRDD.collect()
+ 
+##print the result
+print(mapResult)
+
+-----------------------------------
+
+spark-submit map.py > out.log
+
+
+
+
+----------
+
+
+filter RDD
+{
+partition:ask parent
+dependency:narrow=hdfs RDD
+compute:filter amount>10000
+preferred location-ask parent
+}
+
+lineage--holds all the information of RDD
+
+
+
+---------------------
+
+sourceRDD=sc.parallelize([51,44,11,12,14,5,6,3,3,1,7,7,11],4)---4 is number of partition
+
+--------------------
+
+
+
+
+map(transformation)
+lambda function
+collect is an action
+-----------
+
+Difference between map(transformation) vs FlatMap(transformation)
+
+sc.parallelize
+sc.textfile
+
+
+
+--------------
+#import Libraries
+from pyspark import SparkConf,SparkContext
+
+#create sparkcontextobject
+sc=SparkContext()
+
+##create source RDD,thesame will be used for the coming examples
+sourceRDD=sc.parallelize(["map reduce is spark","spark is version of map","spark map reduce next version"])
+
+##transform elements using map
+mapRDD=sourceRDD.map(lambda line:line.split(" "))
+
+##get the results out of RDDusing action collect
+mapResult=mapRDD.collect()
+print(mapResult)
+sentencecount=mapRDD.count()
+print(sentencecount)
+
+----
+
+cp map_1.py flatmap.py
+
+---
+
+filter.py
+
+----
+#import Libraries
+from pyspark import SparkConf,SparkContext
+
+sc=SparkContext()
+
+##create source RDD,thesame will be used for the coming examples
+sourceRDD=sc.parallelize([51,44,11,12,14,5,6,3,3,1,7,7,11],4)
+
+##transform elements using map
+mapRDD=sourceRDD.filter(lambda x:x%2==0)
+
+##get the results out of RDDusing action collect
+mapResult=mapRDD.collect()
+ 
+##print the result
+print(mapResult)
+
+-------------
+reduce:
+
+
+------
+
+pairRDDs
+
+key value RDD
+function:
+
+1.reduceByKey
+--------------
+
+
+2.sortbykey
+
+
+----------------
+
+
+
+
+
+from pyspark import SparkConf,SparkContext
+sc=SparkContext()
+from pyspark import SQLContext
+sqlContext=SQLContext(sc)
+data_file="/user/guptanayancy/sql.txt"
+raw_data=sc.textFile(data_file)
+from pyspark.sql import Row
+csv_data=raw_data.map(lambda l:l.split(","))
+row_data=csv_data.map(lambda p: Row(cust_id=int(p[0]),
+amount=p[1],
+product=p[2]
+)
+)
+transactions_df=sqlContext.createDataFrame(row_data)
+transactons_df.registerTempTable("transactions")
+id_amount=sqlContext.sql("""SELECT cust_id,sum(amount) FROM transactions group by cust_id""")
+id_amount.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
