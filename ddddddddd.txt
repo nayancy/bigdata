@@ -1,0 +1,2021 @@
+Row(host=u'olia.teledetection.fr', frequency=148, totalBytes=1094461, averageSize=7395.006756756757)
+Row(host=u'oeonline.com', frequency=148, totalBytes=952483, averageSize=6435.695945945946)
+Row(host=u'128.159.142.65', frequency=148, totalBytes=2625900, averageSize=17742.567567567567)
+Row(host=u'netcom19.netcom.com', frequency=149, totalBytes=2128435, averageSize=14284.79865771812)
+Row(host=u'sydney2.world.net', frequency=149, totalBytes=2834833, averageSize=19025.724832214764)
+Row(host=u'inetsv1.daimon-hs.daimon.toyama.jp', frequency=149, totalBytes=3705092, averageSize=24866.389261744967)
+Row(host=u'chaos.idirect.com', frequency=149, totalBytes=1283521, averageSize=8614.23489932886)
+Row(host=u'bast.air.saab.se', frequency=149, totalBytes=12359778, averageSize=82951.53020134228)
+Row(host=u'204.180.98.3', frequency=149, totalBytes=3386284, averageSize=22726.738255033557)
+Row(host=u'merc.micron.com', frequency=149, totalBytes=1840153, averageSize=12350.020134228187)
+Row(host=u'192.58.206.21', frequency=149, totalBytes=2540607, averageSize=17051.053691275167)
+Row(host=u'163.205.11.210', frequency=149, totalBytes=375228, averageSize=2518.308724832215)
+Row(host=u'wizard.spry.com', frequency=149, totalBytes=5004524, averageSize=33587.409395973154)
+Row(host=u'onet2.cup.hp.com', frequency=150, totalBytes=1181061, averageSize=7873.74)
+Row(host=u'163.205.16.6', frequency=150, totalBytes=375852, averageSize=2505.68)
+Row(host=u'pc092040.oulu.fi', frequency=150, totalBytes=2159822, averageSize=14398.813333333334)
+Row(host=u'128.217.61.57', frequency=150, totalBytes=1130309, averageSize=7535.393333333333)
+Row(host=u'ath-gw7.hol.gr', frequency=150, totalBytes=2223213, averageSize=14821.42)
+Row(host=u'158.26.35.139', frequency=150, totalBytes=1179395, averageSize=7862.633333333333)
+Row(host=u'ppp-nyc-1-23.ios.com', frequency=150, totalBytes=1241082, averageSize=8273.88)
+Row(host=u'ns.rmc.com', frequency=151, totalBytes=5894301, averageSize=39035.105960264904)
+Row(host=u'n1032553.ksc.nasa.gov', frequency=151, totalBytes=1485170, averageSize=9835.562913907284)
+Row(host=u'asky.picky.or.jp', frequency=151, totalBytes=1793805, averageSize=11879.503311258279)
+Row(host=u'139.169.30.83', frequency=151, totalBytes=1131828, averageSize=7495.549668874172)
+Row(host=u'www.bconnex.net', frequency=152, totalBytes=4896454, averageSize=32213.513157894737)
+Row(host=u'mansell.gpsemi.com', frequency=152, totalBytes=1347638, averageSize=8866.03947368421)
+Row(host=u'srv1.freenet.calgary.ab.ca', frequency=153, totalBytes=5884477, averageSize=38460.63398692811)
+Row(host=u'129.198.30.228', frequency=153, totalBytes=808454, averageSize=5284.013071895425)
+Row(host=u'206.26.142.2', frequency=153, totalBytes=4217253, averageSize=27563.745098039217)
+Row(host=u'threefers.ksc.nasa.gov', frequency=153, totalBytes=404688, averageSize=2645.0196078431372)
+Row(host=u'arctic.nad.northrop.com', frequency=153, totalBytes=2235362, averageSize=14610.209150326797)
+Row(host=u'mv.mv.com', frequency=154, totalBytes=1271842, averageSize=8258.714285714286)
+Row(host=u'128.217.63.27', frequency=154, totalBytes=1182282, averageSize=7677.1558441558445)
+Row(host=u'doom.idirect.com', frequency=154, totalBytes=1418905, averageSize=9213.66883116883)
+Row(host=u'benz.mech.utah.edu', frequency=154, totalBytes=10531562, averageSize=68386.76623376623)
+Row(host=u'143.108.39.43', frequency=154, totalBytes=3354541, averageSize=21782.733766233767)
+Row(host=u'163.205.11.143', frequency=155, totalBytes=1429495, averageSize=9222.548387096775)
+Row(host=u'ligea.sc.intel.com', frequency=155, totalBytes=5088034, averageSize=32826.02580645162)
+Row(host=u'asimov', frequency=155, totalBytes=3049764, averageSize=19675.89677419355)
+Row(host=u'exile.npa.uiuc.edu', frequency=155, totalBytes=2072492, averageSize=13370.916129032257)
+Row(host=u'gw_inet.pepboys.com', frequency=156, totalBytes=5569294, averageSize=35700.60256410256)
+Row(host=u'h132_197_8_121.gte.com', frequency=156, totalBytes=1549711, averageSize=9934.044871794871)
+Row(host=u'n868791.ksc.nasa.gov', frequency=156, totalBytes=390304, averageSize=2501.948717948718)
+Row(host=u'rkinder.gsfc.nasa.gov', frequency=156, totalBytes=2331196, averageSize=14943.564102564103)
+Row(host=u'pc0139.metrolink.net', frequency=156, totalBytes=1587151, averageSize=10174.044871794871)
+Row(host=u'128.158.26.222', frequency=156, totalBytes=1488387, averageSize=9540.942307692309)
+Row(host=u'155.74.110.143', frequency=157, totalBytes=1880100, averageSize=11975.15923566879)
+Row(host=u'jmmartin.dialup.francenet.fr', frequency=157, totalBytes=5803634, averageSize=36965.82165605095)
+Row(host=u'169.197.3.34', frequency=157, totalBytes=1797938, averageSize=11451.83439490446)
+Row(host=u'194.16.70.70', frequency=157, totalBytes=6401861, averageSize=40776.1847133758)
+Row(host=u'128.159.151.155', frequency=158, totalBytes=403862, averageSize=2556.0886075949365)
+Row(host=u'n104968.ksc.nasa.gov', frequency=158, totalBytes=403971, averageSize=2556.778481012658)
+Row(host=u'subo7.earthlink.net', frequency=158, totalBytes=2240911, averageSize=14182.981012658227)
+Row(host=u'epsongw3.epson.co.jp', frequency=158, totalBytes=1840823, averageSize=11650.778481012658)
+Row(host=u'hplvopen.lvld.hp.com', frequency=158, totalBytes=4800634, averageSize=30383.759493670885)
+Row(host=u'merlin.resmel.bhp.com.au', frequency=158, totalBytes=1720887, averageSize=10891.689873417721)
+Row(host=u'rigel.rice.edu', frequency=158, totalBytes=4043860, averageSize=25594.050632911392)
+Row(host=u'163.206.51.89', frequency=159, totalBytes=1940443, averageSize=12204.044025157233)
+Row(host=u'guiteau.macsch.com', frequency=159, totalBytes=7278893, averageSize=45779.201257861634)
+Row(host=u'r2d2.sci.fi', frequency=159, totalBytes=2571801, averageSize=16174.849056603774)
+Row(host=u'n1032042.ksc.nasa.gov', frequency=159, totalBytes=691037, averageSize=4346.144654088051)
+Row(host=u'199.17.85.174', frequency=159, totalBytes=6535473, averageSize=41103.6037735849)
+Row(host=u'164.156.73.54', frequency=159, totalBytes=11276671, averageSize=70922.45911949685)
+Row(host=u'worf.qntm.com', frequency=160, totalBytes=2916073, averageSize=18225.45625)
+Row(host=u'163.205.23.9', frequency=160, totalBytes=419351, averageSize=2620.94375)
+Row(host=u'163.205.12.31', frequency=160, totalBytes=970077, averageSize=6062.98125)
+Row(host=u'source.iconz.co.nz', frequency=160, totalBytes=3569093, averageSize=22306.83125)
+Row(host=u'128.159.129.170', frequency=161, totalBytes=399504, averageSize=2481.391304347826)
+Row(host=u'163.205.2.132', frequency=161, totalBytes=424792, averageSize=2638.4596273291927)
+Row(host=u'ottgate3.bnr.ca', frequency=161, totalBytes=1863655, averageSize=11575.496894409938)
+Row(host=u'ri004391.rdyne.rockwell.com', frequency=161, totalBytes=1106649, averageSize=6873.596273291925)
+Row(host=u'164.86.39.45', frequency=161, totalBytes=5654440, averageSize=35120.74534161491)
+Row(host=u'128.217.61.144', frequency=161, totalBytes=1071004, averageSize=6652.198757763975)
+Row(host=u'oceana.sdsc.edu', frequency=161, totalBytes=3834856, averageSize=23818.981366459626)
+Row(host=u'cblain.amgen.com', frequency=161, totalBytes=5127704, averageSize=31849.093167701863)
+Row(host=u'163.205.3.60', frequency=162, totalBytes=650419, averageSize=4014.932098765432)
+Row(host=u'n1377014.ksc.nasa.gov', frequency=162, totalBytes=429756, averageSize=2652.814814814815)
+Row(host=u'128.217.62.48', frequency=162, totalBytes=491842, averageSize=3036.061728395062)
+Row(host=u'n1144635.ksc.nasa.gov', frequency=162, totalBytes=642347, averageSize=3965.104938271605)
+Row(host=u'n1132651.ksc.nasa.gov', frequency=162, totalBytes=412270, averageSize=2544.8765432098767)
+Row(host=u'nmpch.nokia.com', frequency=162, totalBytes=2355979, averageSize=14543.08024691358)
+Row(host=u'128.159.144.193', frequency=162, totalBytes=305039, averageSize=1882.9567901234568)
+Row(host=u'ojmac.larc.nasa.gov', frequency=162, totalBytes=1865724, averageSize=11516.814814814816)
+Row(host=u'www-e1a.gnn.com', frequency=162, totalBytes=1834565, averageSize=11324.475308641975)
+Row(host=u'n862263.ksc.nasa.gov', frequency=163, totalBytes=571840, averageSize=3508.2208588957055)
+Row(host=u'128.159.135.72', frequency=163, totalBytes=841433, averageSize=5162.165644171779)
+Row(host=u'barb.wchat.on.ca', frequency=163, totalBytes=4742400, averageSize=29094.478527607364)
+Row(host=u'bbcc-123.tamu.edu', frequency=163, totalBytes=17685772, averageSize=108501.66871165644)
+Row(host=u'168.239.2.116', frequency=163, totalBytes=7370225, averageSize=45216.10429447853)
+Row(host=u'163.206.10.6', frequency=163, totalBytes=532487, averageSize=3266.7914110429447)
+Row(host=u'n1122774.ksc.nasa.gov', frequency=164, totalBytes=576157, averageSize=3513.1524390243903)
+Row(host=u'gatekeeper.homecare.com', frequency=164, totalBytes=9271472, averageSize=56533.365853658535)
+Row(host=u'imp01.fanshawec.on.ca', frequency=164, totalBytes=4114521, averageSize=25088.54268292683)
+Row(host=u'n1028246.ksc.nasa.gov', frequency=164, totalBytes=534288, averageSize=3257.8536585365855)
+Row(host=u'129.79.254.191', frequency=164, totalBytes=14279119, averageSize=87067.7987804878)
+Row(host=u'n1032025.ksc.nasa.gov', frequency=165, totalBytes=426751, averageSize=2586.369696969697)
+Row(host=u'indy2.indy.net', frequency=165, totalBytes=2840987, averageSize=17218.10303030303)
+Row(host=u'michelmoore.controller.umb.edu', frequency=165, totalBytes=7635378, averageSize=46275.01818181818)
+Row(host=u'bjk.olivetti.za', frequency=165, totalBytes=2784957, averageSize=16878.52727272727)
+Row(host=u'gallux.gallaudet.edu', frequency=165, totalBytes=1377658, averageSize=8349.442424242425)
+Row(host=u'wawa.geo.umass.edu', frequency=165, totalBytes=2618805, averageSize=15871.545454545454)
+Row(host=u'p17.euronet.nl', frequency=165, totalBytes=4951375, averageSize=30008.333333333332)
+Row(host=u'163.206.137.5', frequency=166, totalBytes=1157976, averageSize=6975.759036144578)
+Row(host=u'icewall.ceco.com', frequency=166, totalBytes=5197486, averageSize=31310.156626506025)
+Row(host=u'delombard.lerc.nasa.gov', frequency=166, totalBytes=4398242, averageSize=26495.433734939757)
+Row(host=u'usstyx.glaxo.com', frequency=166, totalBytes=3099552, averageSize=18672.0)
+Row(host=u'iputt.rmplc.co.uk', frequency=166, totalBytes=4642551, averageSize=27967.17469879518)
+Row(host=u'134.120.220.153', frequency=166, totalBytes=1233992, averageSize=7433.686746987952)
+Row(host=u'eplet.mira.net.au', frequency=167, totalBytes=4718133, averageSize=28252.29341317365)
+Row(host=u'uuneo.neosoft.com', frequency=167, totalBytes=2060152, averageSize=12336.239520958085)
+Row(host=u'128.159.140.127', frequency=168, totalBytes=431275, averageSize=2567.1130952380954)
+Row(host=u'163.205.23.117', frequency=168, totalBytes=488545, averageSize=2908.0059523809523)
+Row(host=u'ps2-18.uqac.uquebec.ca', frequency=168, totalBytes=3034586, averageSize=18063.011904761905)
+Row(host=u'128.158.31.34', frequency=168, totalBytes=4135226, averageSize=24614.440476190477)
+Row(host=u'198.164.3.27', frequency=168, totalBytes=655471, averageSize=3901.6130952380954)
+Row(host=u'dialup35.infobahnos.com', frequency=168, totalBytes=5546183, averageSize=33012.994047619046)
+Row(host=u'hasle.oslonett.no', frequency=169, totalBytes=3021368, averageSize=17877.917159763314)
+Row(host=u'163.205.166.19', frequency=169, totalBytes=164235, averageSize=971.8047337278107)
+Row(host=u'n872545.ksc.nasa.gov', frequency=169, totalBytes=466803, averageSize=2762.147928994083)
+Row(host=u'128.159.144.47', frequency=170, totalBytes=423116, averageSize=2488.9176470588236)
+Row(host=u'gw1.cat.com', frequency=170, totalBytes=4841358, averageSize=28478.576470588236)
+Row(host=u'fw1.torolab.ibm.com', frequency=170, totalBytes=2390033, averageSize=14059.017647058823)
+Row(host=u'bass.hooked.net', frequency=170, totalBytes=4058557, averageSize=23873.86470588235)
+Row(host=u'rwalker2.cin.dca.com', frequency=170, totalBytes=4462200, averageSize=26248.235294117647)
+Row(host=u'192.112.239.46', frequency=171, totalBytes=901007, averageSize=5269.046783625731)
+Row(host=u'163.206.113.43', frequency=171, totalBytes=35438, averageSize=207.23976608187135)
+Row(host=u'163.205.23.43', frequency=171, totalBytes=457044, averageSize=2672.7719298245615)
+Row(host=u'dougal.atm.ox.ac.uk', frequency=171, totalBytes=1275636, averageSize=7459.859649122807)
+Row(host=u'163.205.2.100', frequency=171, totalBytes=463855, averageSize=2712.6023391812864)
+Row(host=u'mac144.ma.psu.edu', frequency=171, totalBytes=1743233, averageSize=10194.345029239767)
+Row(host=u'felix.woodtech.com', frequency=171, totalBytes=509859, averageSize=2981.6315789473683)
+Row(host=u'134.84.112.183', frequency=171, totalBytes=16918931, averageSize=98941.11695906433)
+Row(host=u'163.206.130.61', frequency=171, totalBytes=1362971, averageSize=7970.590643274853)
+Row(host=u'alta.atk.com', frequency=172, totalBytes=1320759, averageSize=7678.831395348837)
+Row(host=u'anonymous.chevron.com', frequency=172, totalBytes=12701570, averageSize=73846.33720930232)
+Row(host=u'bensmtp.ksc.nasa.gov', frequency=173, totalBytes=3221834, averageSize=18623.317919075143)
+Row(host=u'relay.dia.osis.gov', frequency=173, totalBytes=967060, averageSize=5589.9421965317915)
+Row(host=u'romulus.ultranet.com', frequency=173, totalBytes=3513727, averageSize=20310.56069364162)
+Row(host=u'n1028286.ksc.nasa.gov', frequency=173, totalBytes=458617, averageSize=2650.965317919075)
+Row(host=u'160.205.49.146', frequency=173, totalBytes=2005553, averageSize=11592.791907514451)
+Row(host=u'n1123728.ksc.nasa.gov', frequency=174, totalBytes=436386, averageSize=2507.9655172413795)
+Row(host=u'128.159.140.128', frequency=174, totalBytes=650315, averageSize=3737.442528735632)
+Row(host=u'n1144878.ksc.nasa.gov', frequency=174, totalBytes=1157724, averageSize=6653.586206896552)
+Row(host=u'srs249.scf.loral.com', frequency=176, totalBytes=3978310, averageSize=22604.034090909092)
+Row(host=u'rcwusr.bp.com', frequency=176, totalBytes=4820918, averageSize=27391.579545454544)
+Row(host=u'128.159.112.47', frequency=176, totalBytes=58367, averageSize=331.6306818181818)
+Row(host=u'193.132.114.242', frequency=177, totalBytes=1192016, averageSize=6734.553672316384)
+Row(host=u'pc19.han.data.telia.se', frequency=177, totalBytes=4639018, averageSize=26209.141242937854)
+Row(host=u'128.159.144.38', frequency=178, totalBytes=491472, averageSize=2761.078651685393)
+Row(host=u'cilab_srv02.ci.uminho.pt', frequency=178, totalBytes=3683438, averageSize=20693.47191011236)
+Row(host=u'130.246.17.32', frequency=178, totalBytes=9312233, averageSize=52315.91573033708)
+Row(host=u'tilak.cage.curtin.edu.au', frequency=178, totalBytes=908677, averageSize=5104.926966292135)
+Row(host=u'128.159.77.122', frequency=179, totalBytes=525964, averageSize=2938.346368715084)
+Row(host=u'lobster.msfc.nasa.gov', frequency=179, totalBytes=5733653, averageSize=32031.58100558659)
+Row(host=u'n1031629.ksc.nasa.gov', frequency=180, totalBytes=450871, averageSize=2504.838888888889)
+Row(host=u'163.205.3.38', frequency=180, totalBytes=451003, averageSize=2505.572222222222)
+Row(host=u'199.201.186.105', frequency=180, totalBytes=819388, averageSize=4552.155555555555)
+Row(host=u'142.74.90.67', frequency=180, totalBytes=690578, averageSize=3836.5444444444443)
+Row(host=u'163.205.23.125', frequency=181, totalBytes=203199, averageSize=1122.646408839779)
+Row(host=u'ppp09-08.rns.tamu.edu', frequency=181, totalBytes=11962514, averageSize=66091.23756906077)
+Row(host=u'rosewood.frco.com', frequency=181, totalBytes=10236328, averageSize=56554.298342541435)
+Row(host=u'204.5.202.12', frequency=181, totalBytes=2272958, averageSize=12557.779005524862)
+Row(host=u'pc8f50.bhi.bhsi.com', frequency=181, totalBytes=6881952, averageSize=38021.83425414364)
+Row(host=u'130.132.25.94', frequency=181, totalBytes=7271969, averageSize=40176.62430939227)
+Row(host=u'lahal.ksc.nasa.gov', frequency=182, totalBytes=3336773, averageSize=18333.917582417584)
+Row(host=u'128.159.122.162', frequency=182, totalBytes=1181783, averageSize=6493.313186813187)
+Row(host=u'n1123320.ksc.nasa.gov', frequency=182, totalBytes=479327, averageSize=2633.664835164835)
+Row(host=u'n167287.ksc.nasa.gov', frequency=182, totalBytes=457468, averageSize=2513.5604395604396)
+Row(host=u'dns.it.net', frequency=182, totalBytes=2327015, averageSize=12785.796703296703)
+Row(host=u'141.102.40.36', frequency=182, totalBytes=9556552, averageSize=52508.52747252747)
+Row(host=u'n1123605.ksc.nasa.gov', frequency=182, totalBytes=488425, averageSize=2683.653846153846)
+Row(host=u'ssbuv.gsfc.nasa.gov', frequency=183, totalBytes=1037610, averageSize=5670.0)
+Row(host=u'gk-east.usps.gov', frequency=183, totalBytes=4445284, averageSize=24291.169398907103)
+Row(host=u'fn1.freenet.edmonton.ab.ca', frequency=183, totalBytes=4017910, averageSize=21955.792349726777)
+Row(host=u'160.136.19.77', frequency=183, totalBytes=1836858, averageSize=10037.475409836066)
+Row(host=u'128.159.122.119', frequency=183, totalBytes=1168661, averageSize=6386.12568306011)
+Row(host=u'so.scsnet.com', frequency=184, totalBytes=1562934, averageSize=8494.20652173913)
+Row(host=u'madison-2.nara.gov', frequency=184, totalBytes=2230303, averageSize=12121.21195652174)
+Row(host=u'n1032445.ksc.nasa.gov', frequency=184, totalBytes=1748907, averageSize=9504.929347826086)
+Row(host=u'n1142807.ksc.nasa.gov', frequency=184, totalBytes=757872, averageSize=4118.869565217391)
+Row(host=u'dialup04.nas.com', frequency=184, totalBytes=6480016, averageSize=35217.47826086957)
+Row(host=u'alyssa.prodigy.com', frequency=185, totalBytes=4793176, averageSize=25909.05945945946)
+Row(host=u'n868732.ksc.nasa.gov', frequency=185, totalBytes=480936, averageSize=2599.654054054054)
+Row(host=u'142.65.70.197', frequency=185, totalBytes=4680846, averageSize=25301.87027027027)
+Row(host=u'fts3p14-bfs.scri.fsu.edu', frequency=185, totalBytes=5994935, averageSize=32405.054054054053)
+Row(host=u'128.159.129.225', frequency=186, totalBytes=3352128, averageSize=18022.1935483871)
+Row(host=u'outgate.ft.com', frequency=187, totalBytes=947953, averageSize=5069.267379679144)
+Row(host=u'n164576.ksc.nasa.gov', frequency=188, totalBytes=1424225, averageSize=7575.664893617021)
+Row(host=u'crc3-fddi.cris.com', frequency=188, totalBytes=2613308, averageSize=13900.574468085106)
+Row(host=u'gvls2.vfl.paramax.com', frequency=188, totalBytes=3207721, averageSize=17062.34574468085)
+Row(host=u'128.159.123.58', frequency=189, totalBytes=3301030, averageSize=17465.767195767196)
+Row(host=u'hpbs100.boi.hp.com', frequency=189, totalBytes=8995718, averageSize=47596.391534391536)
+Row(host=u'35.8.33.32', frequency=189, totalBytes=10339989, averageSize=54708.93650793651)
+Row(host=u'128.159.63.159', frequency=190, totalBytes=528472, averageSize=2781.4315789473685)
+Row(host=u'128.159.129.88', frequency=190, totalBytes=1032813, averageSize=5435.857894736842)
+Row(host=u'king.opt-sci.arizona.edu', frequency=190, totalBytes=1727983, averageSize=9094.647368421052)
+Row(host=u'163.206.137.11', frequency=191, totalBytes=579932, averageSize=3036.2931937172775)
+Row(host=u'netport-29.iu.net', frequency=191, totalBytes=3128949, averageSize=16381.931937172774)
+Row(host=u'gatekeeper.ccat.co.uk', frequency=191, totalBytes=5146582, averageSize=26945.455497382198)
+Row(host=u'160.205.122.58', frequency=191, totalBytes=4357668, averageSize=22815.015706806284)
+Row(host=u'orion.htl-bw.ch', frequency=191, totalBytes=3476888, averageSize=18203.60209424084)
+Row(host=u'n1043354.ksc.nasa.gov', frequency=192, totalBytes=481313, averageSize=2506.8385416666665)
+Row(host=u'gcsin1.gecm.com', frequency=192, totalBytes=2367701, averageSize=12331.776041666666)
+Row(host=u'bombasto.informatik.rwth-aachen.de', frequency=192, totalBytes=13601323, averageSize=70840.22395833333)
+Row(host=u'n1142699.ksc.nasa.gov', frequency=192, totalBytes=480695, averageSize=2503.6197916666665)
+Row(host=u'sol.racsa.co.cr', frequency=192, totalBytes=2428837, averageSize=12650.192708333334)
+Row(host=u'128.159.168.162', frequency=193, totalBytes=154594, averageSize=801.0051813471503)
+Row(host=u'mm.fhg.de', frequency=193, totalBytes=755022, averageSize=3912.0310880829015)
+Row(host=u'halley.la.asu.edu', frequency=194, totalBytes=3305277, averageSize=17037.51030927835)
+Row(host=u'p27.s501.c41.k12.wv.us', frequency=194, totalBytes=4380662, averageSize=22580.731958762888)
+Row(host=u'c682h.gsfc.nasa.gov', frequency=195, totalBytes=4974041, averageSize=25507.902564102566)
+Row(host=u'141.102.80.167', frequency=195, totalBytes=11692213, averageSize=59960.066666666666)
+Row(host=u'139.169.135.185', frequency=196, totalBytes=1627614, averageSize=8304.15306122449)
+Row(host=u'192.112.239.200', frequency=197, totalBytes=588702, averageSize=2988.3350253807107)
+Row(host=u'163.205.156.61', frequency=197, totalBytes=74535, averageSize=378.3502538071066)
+Row(host=u'laotzu.uswmis.com', frequency=197, totalBytes=6718902, averageSize=34106.10152284264)
+Row(host=u'n1121107.ksc.nasa.gov', frequency=198, totalBytes=884872, averageSize=4469.050505050505)
+Row(host=u'165.164.140.191', frequency=198, totalBytes=11640925, averageSize=58792.5505050505)
+Row(host=u'gutter.tepia.nmda.or.jp', frequency=199, totalBytes=4702586, averageSize=23631.085427135677)
+Row(host=u'128.159.132.61', frequency=199, totalBytes=902651, averageSize=4535.934673366834)
+Row(host=u'novix.casi.sti.nasa.gov', frequency=199, totalBytes=2321386, averageSize=11665.256281407035)
+Row(host=u'unidata.com', frequency=199, totalBytes=3897303, averageSize=19584.437185929648)
+Row(host=u'mickmac.lanl.gov', frequency=199, totalBytes=6038910, averageSize=30346.281407035174)
+Row(host=u'harebell.inmos.co.uk', frequency=199, totalBytes=3271820, averageSize=16441.306532663315)
+Row(host=u'128.227.97.61', frequency=199, totalBytes=5556861, averageSize=27923.924623115578)
+Row(host=u'n1132658.ksc.nasa.gov', frequency=200, totalBytes=1673461, averageSize=8367.305)
+Row(host=u'bastion.fdic.gov', frequency=200, totalBytes=2894385, averageSize=14471.925)
+Row(host=u'158.152.1.40', frequency=200, totalBytes=9427792, averageSize=47138.96)
+Row(host=u'reggae.iinet.net.au', frequency=201, totalBytes=2963276, averageSize=14742.666666666666)
+Row(host=u'129.193.89.10', frequency=201, totalBytes=11384639, averageSize=56639.99502487562)
+Row(host=u'n1388869.ksc.nasa.gov', frequency=202, totalBytes=544278, averageSize=2694.4455445544554)
+Row(host=u'128.159.177.162', frequency=203, totalBytes=658168, averageSize=3242.206896551724)
+Row(host=u'163.205.80.44', frequency=203, totalBytes=5520296, averageSize=27193.576354679804)
+Row(host=u'400gtw.nl', frequency=203, totalBytes=1973164, averageSize=9720.019704433498)
+Row(host=u'osf1.gmu.edu', frequency=203, totalBytes=2839193, averageSize=13986.172413793103)
+Row(host=u'192.112.239.223', frequency=203, totalBytes=626190, averageSize=3084.679802955665)
+Row(host=u'pc05.edu.uni-linz.ac.at', frequency=203, totalBytes=5442745, averageSize=26811.55172413793)
+Row(host=u'fireball.jpl.nasa.gov', frequency=203, totalBytes=2337856, averageSize=11516.532019704433)
+Row(host=u'wwwproxy.info.au', frequency=204, totalBytes=3311794, averageSize=16234.28431372549)
+Row(host=u'163.206.104.17', frequency=204, totalBytes=264313, averageSize=1295.6519607843138)
+Row(host=u'n1032601.ksc.nasa.gov', frequency=204, totalBytes=510890, averageSize=2504.3627450980393)
+Row(host=u'148.202.3.195', frequency=204, totalBytes=2230593, averageSize=10934.279411764706)
+Row(host=u'128.159.122.20', frequency=204, totalBytes=1217031, averageSize=5965.838235294118)
+Row(host=u'wpo.telstra.com.au', frequency=205, totalBytes=8637359, averageSize=42133.45853658536)
+Row(host=u'163.205.162.111', frequency=205, totalBytes=105015, averageSize=512.2682926829268)
+Row(host=u'exinos.ms.com', frequency=205, totalBytes=5375760, averageSize=26223.219512195123)
+Row(host=u'igw.fmc.com', frequency=205, totalBytes=4706696, averageSize=22959.49268292683)
+Row(host=u'n1376224.ksc.nasa.gov', frequency=205, totalBytes=573888, averageSize=2799.4536585365854)
+Row(host=u'cariddi.ulisse.it', frequency=206, totalBytes=1863452, averageSize=9045.883495145632)
+Row(host=u'163.205.2.180', frequency=206, totalBytes=548101, averageSize=2660.6844660194174)
+Row(host=u'urania.harvard.edu', frequency=207, totalBytes=601244, averageSize=2904.56038647343)
+Row(host=u'193.143.192.92', frequency=208, totalBytes=2978636, averageSize=14320.365384615385)
+Row(host=u'vaxa.clarion.edu', frequency=208, totalBytes=1808532, averageSize=8694.865384615385)
+Row(host=u'n1373372.ksc.nasa.gov', frequency=209, totalBytes=549209, averageSize=2627.7942583732056)
+Row(host=u'philb.tiac.net', frequency=209, totalBytes=1316967, averageSize=6301.277511961723)
+Row(host=u'crc1-fddi.cris.com', frequency=209, totalBytes=3831195, averageSize=18331.076555023923)
+Row(host=u'163.205.54.76', frequency=210, totalBytes=847212, averageSize=4034.342857142857)
+Row(host=u'163.205.11.218', frequency=210, totalBytes=661033, averageSize=3147.7761904761905)
+Row(host=u'ns1.maf.mobile.al.us', frequency=211, totalBytes=2528762, averageSize=11984.654028436018)
+Row(host=u'gk-west.usps.gov', frequency=212, totalBytes=3615030, averageSize=17052.028301886792)
+Row(host=u'surveyor.jf.intel.com', frequency=213, totalBytes=7862540, averageSize=36913.333333333336)
+Row(host=u'163.205.16.66', frequency=213, totalBytes=559961, averageSize=2628.924882629108)
+Row(host=u'163.205.2.204', frequency=213, totalBytes=554640, averageSize=2603.943661971831)
+Row(host=u'ztivax.zfe.siemens.de', frequency=213, totalBytes=5320189, averageSize=24977.413145539907)
+Row(host=u'smaug.eecs.umich.edu', frequency=213, totalBytes=5562914, averageSize=26116.967136150233)
+Row(host=u'128.159.165.144', frequency=214, totalBytes=1476641, averageSize=6900.191588785046)
+Row(host=u'n1122121.ksc.nasa.gov', frequency=215, totalBytes=740056, averageSize=3442.1209302325583)
+Row(host=u'n1031727.ksc.nasa.gov', frequency=215, totalBytes=543164, averageSize=2526.344186046512)
+Row(host=u'titan02f', frequency=215, totalBytes=9145006, averageSize=42534.91162790698)
+Row(host=u'n1028279.ksc.nasa.gov', frequency=216, totalBytes=766010, averageSize=3546.3425925925926)
+Row(host=u'triton', frequency=216, totalBytes=3597753, averageSize=16656.26388888889)
+Row(host=u'147.147.191.43', frequency=216, totalBytes=1829115, averageSize=8468.125)
+Row(host=u'cossc.gsfc.nasa.gov', frequency=217, totalBytes=4955081, averageSize=22834.474654377882)
+Row(host=u'204.30.14.10', frequency=217, totalBytes=2280932, averageSize=10511.207373271889)
+Row(host=u'163.205.12.102', frequency=218, totalBytes=627315, averageSize=2877.591743119266)
+Row(host=u'endeavor.fujitsu.co.jp', frequency=219, totalBytes=8219020, averageSize=37529.77168949772)
+Row(host=u'152.163.192.6', frequency=219, totalBytes=6193038, averageSize=28278.712328767124)
+Row(host=u'128.227.8.135', frequency=219, totalBytes=14536427, averageSize=66376.37899543378)
+Row(host=u'n1123735.ksc.nasa.gov', frequency=220, totalBytes=1394822, averageSize=6340.1)
+Row(host=u'n1032613.ksc.nasa.gov', frequency=220, totalBytes=2028809, averageSize=9221.85909090909)
+Row(host=u'internet-gw.watson.ibm.com', frequency=221, totalBytes=4111758, averageSize=18605.239819004524)
+Row(host=u'bam.nuri.net', frequency=221, totalBytes=5878287, averageSize=26598.58371040724)
+Row(host=u'bbeznoska.lerc.nasa.gov', frequency=221, totalBytes=4778421, averageSize=21621.814479638007)
+Row(host=u'163.205.12.176', frequency=223, totalBytes=2502973, averageSize=11224.094170403587)
+Row(host=u'hawk.mts.com', frequency=223, totalBytes=2072391, averageSize=9293.233183856502)
+Row(host=u'147.74.41.186', frequency=224, totalBytes=1573703, averageSize=7025.459821428572)
+Row(host=u'emllab.ksc.nasa.gov', frequency=224, totalBytes=1861198, averageSize=8308.919642857143)
+Row(host=u'spiral_b.secom-sis.co.jp', frequency=224, totalBytes=3848642, averageSize=17181.4375)
+Row(host=u'203.255.208.24', frequency=224, totalBytes=3040173, averageSize=13572.200892857143)
+Row(host=u'n1123732.ksc.nasa.gov', frequency=224, totalBytes=584361, averageSize=2608.754464285714)
+Row(host=u'www.thyssen.com', frequency=225, totalBytes=7150691, averageSize=31780.84888888889)
+Row(host=u'ka146023.ksc.nasa.gov', frequency=225, totalBytes=1191566, averageSize=5295.848888888889)
+Row(host=u'arthur.intel.com', frequency=226, totalBytes=5220476, averageSize=23099.451327433628)
+Row(host=u'n1377004.ksc.nasa.gov', frequency=227, totalBytes=714363, averageSize=3146.9735682819382)
+Row(host=u'128.159.145.21', frequency=227, totalBytes=649265, averageSize=2860.1982378854627)
+Row(host=u'128.159.112.24', frequency=227, totalBytes=570336, averageSize=2512.493392070485)
+Row(host=u'atc.eag.unisysgsg.com', frequency=227, totalBytes=1586947, averageSize=6990.955947136564)
+Row(host=u'vivid.autometric.com', frequency=227, totalBytes=7306055, averageSize=32185.264317180616)
+Row(host=u'163.205.166.15', frequency=228, totalBytes=420759, averageSize=1845.4342105263158)
+Row(host=u'gardner.plh.af.mil', frequency=228, totalBytes=2238396, averageSize=9817.526315789473)
+Row(host=u'204.247.19.92', frequency=228, totalBytes=5477701, averageSize=24025.004385964912)
+Row(host=u'sparrow.drexel.edu', frequency=228, totalBytes=1103441, averageSize=4839.653508771929)
+Row(host=u'163.205.16.21', frequency=229, totalBytes=572879, averageSize=2501.6550218340612)
+Row(host=u'139.169.30.22', frequency=229, totalBytes=1885620, averageSize=8234.148471615721)
+Row(host=u'152.85.3.3', frequency=229, totalBytes=9043746, averageSize=39492.34061135371)
+Row(host=u'bussey.physics.fsu.edu', frequency=229, totalBytes=2831493, averageSize=12364.59825327511)
+Row(host=u'nearlink.ll.mit.edu', frequency=229, totalBytes=4008945, averageSize=17506.310043668123)
+Row(host=u'163.191.201.22', frequency=230, totalBytes=17616433, averageSize=76593.18695652173)
+Row(host=u'doplight.nssl.uoknor.edu', frequency=230, totalBytes=4706419, averageSize=20462.691304347827)
+Row(host=u'hokie.ksc.nasa.gov', frequency=231, totalBytes=727992, averageSize=3151.4805194805194)
+Row(host=u'chronos.synopsys.com', frequency=232, totalBytes=4656204, averageSize=20069.844827586207)
+Row(host=u'grumpy.ksc.nasa.gov', frequency=233, totalBytes=3939651, averageSize=16908.37339055794)
+Row(host=u'hitel.kol.co.kr', frequency=233, totalBytes=3696131, averageSize=15863.223175965666)
+Row(host=u'139.169.30.49', frequency=233, totalBytes=2092503, averageSize=8980.69957081545)
+Row(host=u'hu.arc.nasa.gov', frequency=233, totalBytes=8367288, averageSize=35911.107296137336)
+Row(host=u'nikita.cst.cnes.fr', frequency=233, totalBytes=7048804, averageSize=30252.377682403432)
+Row(host=u'mersey.hursley.ibm.com', frequency=235, totalBytes=3428381, averageSize=14588.855319148935)
+Row(host=u'picalon.gun.de', frequency=235, totalBytes=7240699, averageSize=30811.485106382977)
+Row(host=u'n164847.ksc.nasa.gov', frequency=236, totalBytes=1382447, averageSize=5857.826271186441)
+Row(host=u'163.205.154.17', frequency=236, totalBytes=3021335, averageSize=12802.266949152543)
+Row(host=u'wizard.rsoc.rockwell.com', frequency=236, totalBytes=6351382, averageSize=26912.63559322034)
+Row(host=u'198.213.130.39', frequency=236, totalBytes=3014627, averageSize=12773.843220338984)
+Row(host=u'huge.oso.chalmers.se', frequency=237, totalBytes=3980350, averageSize=16794.725738396624)
+Row(host=u'128.217.61.98', frequency=238, totalBytes=430695, averageSize=1809.642857142857)
+Row(host=u'ka144063.ksc.nasa.gov', frequency=238, totalBytes=2424956, averageSize=10188.89075630252)
+Row(host=u'internet-gw.ford.com', frequency=240, totalBytes=8181079, averageSize=34087.82916666667)
+Row(host=u'163.205.2.105', frequency=240, totalBytes=612171, averageSize=2550.7125)
+Row(host=u'cindy.yamato.ibm.co.jp', frequency=240, totalBytes=4222700, averageSize=17594.583333333332)
+Row(host=u'163.205.12.166', frequency=241, totalBytes=5479068, averageSize=22734.721991701244)
+Row(host=u'rgfn.epcc.edu', frequency=243, totalBytes=5425330, averageSize=22326.460905349795)
+Row(host=u'128.159.121.41', frequency=243, totalBytes=1008779, averageSize=4151.3539094650205)
+Row(host=u'169.197.3.135', frequency=243, totalBytes=2343493, averageSize=9644.004115226337)
+Row(host=u'n1000831x.ksc.nasa.gov', frequency=244, totalBytes=1548053, averageSize=6344.479508196721)
+Row(host=u'192.112.22.119', frequency=244, totalBytes=2297415, averageSize=9415.63524590164)
+Row(host=u'163.205.23.71', frequency=245, totalBytes=1238640, averageSize=5055.673469387755)
+Row(host=u'199-186.ico.att.net', frequency=245, totalBytes=2812233, averageSize=11478.502040816327)
+Row(host=u'inetg1.arco.com', frequency=246, totalBytes=6451687, averageSize=26226.369918699187)
+Row(host=u'mfm-stich4pc.amc.uva.nl', frequency=247, totalBytes=2751280, averageSize=11138.785425101214)
+Row(host=u'beck.hydro.on.ca', frequency=247, totalBytes=3180829, averageSize=12877.85020242915)
+Row(host=u'204.148.101.58', frequency=247, totalBytes=4060663, averageSize=16439.93117408907)
+Row(host=u'ka122053.ksc.nasa.gov', frequency=247, totalBytes=1411002, averageSize=5712.558704453441)
+Row(host=u'conch.dny.rockwell.com', frequency=247, totalBytes=11117294, averageSize=45009.287449392716)
+Row(host=u'128.159.122.233', frequency=248, totalBytes=672955, averageSize=2713.5282258064517)
+Row(host=u'163.206.130.46', frequency=248, totalBytes=563831, averageSize=2273.5120967741937)
+Row(host=u'hplb.hpl.hp.com', frequency=250, totalBytes=3607297, averageSize=14429.188)
+Row(host=u'sunh35.lisle.tellabs.com', frequency=251, totalBytes=15654949, averageSize=62370.31474103586)
+Row(host=u'n1121869.ksc.nasa.gov', frequency=252, totalBytes=631157, averageSize=2504.59126984127)
+Row(host=u'proxy.kodak.com', frequency=252, totalBytes=8744454, averageSize=34700.21428571428)
+Row(host=u'n1032336.ksc.nasa.gov', frequency=254, totalBytes=1382025, averageSize=5441.043307086614)
+Row(host=u'heller.cs.berkeley.edu', frequency=256, totalBytes=13527691, averageSize=52842.54296875)
+Row(host=u'inet1.nsc.com', frequency=257, totalBytes=4346758, averageSize=16913.455252918287)
+Row(host=u'163.205.121.3', frequency=258, totalBytes=899804, averageSize=3487.6124031007753)
+Row(host=u'unexlab9.ucr.edu', frequency=258, totalBytes=6789754, averageSize=26316.875968992248)
+Row(host=u'orange.ge.com', frequency=260, totalBytes=15469538, averageSize=59498.223076923074)
+Row(host=u'blooper.ucsb.edu', frequency=260, totalBytes=11252714, averageSize=43279.66923076923)
+Row(host=u'wilbur.sequent.com', frequency=261, totalBytes=3895080, averageSize=14923.67816091954)
+Row(host=u'tais.com', frequency=261, totalBytes=4591776, averageSize=17593.011494252874)
+Row(host=u'136.152.93.216', frequency=261, totalBytes=6115346, averageSize=23430.444444444445)
+Row(host=u'199.201.186.104', frequency=262, totalBytes=3816815, averageSize=14567.996183206107)
+Row(host=u'jobrien-ppp.clark.net', frequency=262, totalBytes=3384230, averageSize=12916.908396946565)
+Row(host=u'uli.physik.tu-chemnitz.de', frequency=263, totalBytes=2420301, averageSize=9202.665399239544)
+Row(host=u'dbrinza.jpl.nasa.gov', frequency=263, totalBytes=1891351, averageSize=7191.448669201521)
+Row(host=u'maz3.maz.net', frequency=263, totalBytes=5086326, averageSize=19339.64258555133)
+Row(host=u'n167331.ksc.nasa.gov', frequency=263, totalBytes=1007727, averageSize=3831.661596958175)
+Row(host=u'152.163.192.68', frequency=263, totalBytes=4076414, averageSize=15499.673003802282)
+Row(host=u'128.159.147.50', frequency=264, totalBytes=3366033, averageSize=12750.125)
+Row(host=u'coopwf93.sp.trw.com', frequency=265, totalBytes=1412406, averageSize=5329.833962264151)
+Row(host=u'n1121793.ksc.nasa.gov', frequency=265, totalBytes=667969, averageSize=2520.6377358490568)
+Row(host=u'pinta.csee.usf.edu', frequency=265, totalBytes=4988917, averageSize=18826.101886792454)
+Row(host=u'sg446107.eng.chrysler.com', frequency=265, totalBytes=6773890, averageSize=25561.849056603773)
+Row(host=u'goldenrule.jcpenney.com', frequency=266, totalBytes=4942389, averageSize=18580.40977443609)
+Row(host=u'n167437.ksc.nasa.gov', frequency=266, totalBytes=735336, averageSize=2764.4210526315787)
+Row(host=u'fsd.com', frequency=267, totalBytes=5080222, averageSize=19027.048689138577)
+Row(host=u'fnugget.intel.com', frequency=268, totalBytes=5701291, averageSize=21273.473880597016)
+Row(host=u'147.74.110.61', frequency=268, totalBytes=121571, averageSize=453.6231343283582)
+Row(host=u'163.205.16.90', frequency=268, totalBytes=691784, averageSize=2581.283582089552)
+Row(host=u'www.westpub.com', frequency=268, totalBytes=5546019, averageSize=20694.100746268658)
+Row(host=u'n1028244.ksc.nasa.gov', frequency=269, totalBytes=764786, averageSize=2843.0706319702604)
+Row(host=u'pcmtr6.jrc.it', frequency=270, totalBytes=4460101, averageSize=16518.892592592594)
+Row(host=u'miriworld.its.unimelb.edu.au', frequency=271, totalBytes=5777285, averageSize=21318.39483394834)
+Row(host=u'hitiij.hitachi.co.jp', frequency=271, totalBytes=5669010, averageSize=20918.856088560886)
+Row(host=u'192.20.239.133', frequency=271, totalBytes=1887816, averageSize=6966.110701107011)
+Row(host=u'smtp.inet.fi', frequency=272, totalBytes=2144617, averageSize=7884.621323529412)
+Row(host=u'n1032026.ksc.nasa.gov', frequency=272, totalBytes=728753, averageSize=2679.238970588235)
+Row(host=u'199.93.170.211', frequency=272, totalBytes=2598235, averageSize=9552.33455882353)
+Row(host=u'pl01265.ksc.nasa.gov', frequency=275, totalBytes=979887, averageSize=3563.2254545454543)
+Row(host=u'163.205.2.35', frequency=276, totalBytes=691566, averageSize=2505.6739130434785)
+Row(host=u'enigma.idirect.com', frequency=276, totalBytes=5156824, averageSize=18684.144927536232)
+Row(host=u'n1127413.ksc.nasa.gov', frequency=276, totalBytes=691442, averageSize=2505.2246376811595)
+Row(host=u'east.ge.com', frequency=276, totalBytes=13129808, averageSize=47571.76811594203)
+Row(host=u'brother.cc.monash.edu.au', frequency=276, totalBytes=8744881, averageSize=31684.351449275364)
+Row(host=u'139.169.30.50', frequency=276, totalBytes=2143605, averageSize=7766.684782608696)
+Row(host=u'152.163.192.2', frequency=277, totalBytes=3613618, averageSize=13045.552346570397)
+Row(host=u'128.159.137.43', frequency=278, totalBytes=1463946, averageSize=5265.992805755395)
+Row(host=u'193.178.53.180', frequency=279, totalBytes=5666229, averageSize=20309.064516129034)
+Row(host=u'spectrum.xerox.com', frequency=280, totalBytes=4259951, averageSize=15214.110714285714)
+Row(host=u'gatekeeper.us.oracle.com', frequency=281, totalBytes=6458480, averageSize=22983.914590747332)
+Row(host=u'inet-tis.toshiba.co.jp', frequency=281, totalBytes=5047845, averageSize=17963.861209964412)
+Row(host=u'www-e1b.gnn.com', frequency=283, totalBytes=5572138, averageSize=19689.533568904593)
+Row(host=u'demornay.lanl.gov', frequency=285, totalBytes=5485313, averageSize=19246.712280701755)
+Row(host=u'seitti.funet.fi', frequency=287, totalBytes=6469330, averageSize=22541.219512195123)
+Row(host=u'orpheus.amdahl.com', frequency=287, totalBytes=10097636, averageSize=35183.40069686411)
+Row(host=u'minos.bch.umontreal.ca', frequency=288, totalBytes=4841976, averageSize=16812.416666666668)
+Row(host=u'fts3p5-bfs.scri.fsu.edu', frequency=288, totalBytes=14992719, averageSize=52058.052083333336)
+Row(host=u'198.83.19.42', frequency=290, totalBytes=3281689, averageSize=11316.168965517241)
+Row(host=u'n1135966.ksc.nasa.gov', frequency=291, totalBytes=1095794, averageSize=3765.6151202749143)
+Row(host=u'redfish.ksc.nasa.gov', frequency=291, totalBytes=2725844, averageSize=9367.161512027491)
+Row(host=u'n1031627.ksc.nasa.gov', frequency=295, totalBytes=742788, averageSize=2517.9254237288137)
+Row(host=u'atropos.jf.intel.com', frequency=296, totalBytes=10090533, averageSize=34089.63851351351)
+Row(host=u'n1123724.ksc.nasa.gov', frequency=297, totalBytes=1275588, averageSize=4294.909090909091)
+Row(host=u'spacelink.msfc.nasa.gov', frequency=297, totalBytes=8955064, averageSize=30151.73063973064)
+Row(host=u'128.159.122.160', frequency=297, totalBytes=2030150, averageSize=6835.521885521885)
+Row(host=u'198.246.65.40', frequency=297, totalBytes=14013654, averageSize=47184.020202020205)
+Row(host=u'ws02.sr.kp.dlr.de', frequency=297, totalBytes=6606467, averageSize=22243.996632996634)
+Row(host=u'igate.nrc.gov', frequency=298, totalBytes=11665061, averageSize=39144.5)
+Row(host=u'152.163.192.37', frequency=298, totalBytes=4204404, averageSize=14108.738255033557)
+Row(host=u'fishmac1.bioz.unibas.ch', frequency=299, totalBytes=12108531, averageSize=40496.75919732441)
+Row(host=u'beavis.b11.ingr.com', frequency=301, totalBytes=8239328, averageSize=27373.182724252492)
+Row(host=u'128.159.135.73', frequency=303, totalBytes=992070, averageSize=3274.158415841584)
+Row(host=u'bruinen.jus.gov.ar', frequency=303, totalBytes=2279024, averageSize=7521.531353135313)
+Row(host=u'152.163.192.4', frequency=304, totalBytes=5994894, averageSize=19720.04605263158)
+Row(host=u'n1028288.ksc.nasa.gov', frequency=306, totalBytes=766423, averageSize=2504.650326797386)
+Row(host=u'host62.ascend.interop.eunet.de', frequency=308, totalBytes=31292211, averageSize=101598.08766233767)
+Row(host=u'klothos.crl.research.digital.com', frequency=311, totalBytes=5029575, averageSize=16172.26688102894)
+Row(host=u'screen.lotus.com', frequency=312, totalBytes=8958375, averageSize=28712.740384615383)
+Row(host=u'n1142702.ksc.nasa.gov', frequency=313, totalBytes=786457, averageSize=2512.6421725239616)
+Row(host=u'nameserver.pwfl.com', frequency=313, totalBytes=12129475, averageSize=38752.31629392971)
+Row(host=u'gw1.fbc.com', frequency=313, totalBytes=7607673, averageSize=24305.664536741213)
+Row(host=u'128.217.61.15', frequency=314, totalBytes=193114, averageSize=615.0127388535032)
+Row(host=u'aheil_pc.orem.novell.com', frequency=315, totalBytes=11485397, averageSize=36461.57777777778)
+Row(host=u'pr19.bsvc.berkeley.edu', frequency=318, totalBytes=4341658, averageSize=13653.012578616352)
+Row(host=u'128.159.121.64', frequency=319, totalBytes=2251694, averageSize=7058.601880877743)
+Row(host=u'128.217.61.184', frequency=319, totalBytes=846251, averageSize=2652.824451410658)
+Row(host=u'faith.waikato.ac.nz', frequency=319, totalBytes=4272274, averageSize=13392.708463949843)
+Row(host=u'unifex.ksc.nasa.gov', frequency=320, totalBytes=6023994, averageSize=18824.98125)
+Row(host=u'snoopy.tblc.lib.fl.us', frequency=320, totalBytes=10170765, averageSize=31783.640625)
+Row(host=u'128.159.135.38', frequency=321, totalBytes=1320722, averageSize=4114.398753894081)
+Row(host=u'firewall.dfw.ibm.com', frequency=322, totalBytes=17415602, averageSize=54085.72049689441)
+Row(host=u'web.kyoto-inet.or.jp', frequency=324, totalBytes=4424790, averageSize=13656.75925925926)
+Row(host=u'thetis.fddi4.fu-berlin.de', frequency=326, totalBytes=2433103, averageSize=7463.506134969325)
+Row(host=u'bettong.client.uq.oz.au', frequency=327, totalBytes=8241363, averageSize=25202.94495412844)
+Row(host=u'163.205.23.72', frequency=328, totalBytes=2398292, averageSize=7311.865853658536)
+Row(host=u'152.163.192.66', frequency=328, totalBytes=10589131, averageSize=32283.935975609755)
+Row(host=u'128.159.122.15', frequency=330, totalBytes=1797250, averageSize=5446.212121212121)
+Row(host=u'hella.stm.it', frequency=331, totalBytes=6437101, averageSize=19447.43504531722)
+Row(host=u'n1031729.ksc.nasa.gov', frequency=331, totalBytes=1058923, averageSize=3199.1631419939577)
+Row(host=u'zang.slip.lm.com', frequency=332, totalBytes=6097283, averageSize=18365.310240963856)
+Row(host=u'n1028722.ksc.nasa.gov', frequency=332, totalBytes=966034, averageSize=2909.740963855422)
+Row(host=u'158.27.59.88', frequency=333, totalBytes=5675473, averageSize=17043.462462462463)
+Row(host=u'n1144636.ksc.nasa.gov', frequency=334, totalBytes=855224, averageSize=2560.5508982035926)
+Row(host=u'163.234.140.22', frequency=336, totalBytes=2325971, averageSize=6922.5327380952385)
+Row(host=u'152.163.192.3', frequency=336, totalBytes=3787473, averageSize=11272.24107142857)
+Row(host=u'gikai.eng.nhk.or.jp', frequency=339, totalBytes=1243486, averageSize=3668.100294985251)
+Row(host=u'163.205.150.22', frequency=339, totalBytes=1428014, averageSize=4212.430678466077)
+Row(host=u'gate.ps.cae.ntt.jp', frequency=342, totalBytes=10800540, averageSize=31580.526315789473)
+Row(host=u'128.159.122.144', frequency=345, totalBytes=2181917, averageSize=6324.397101449275)
+Row(host=u'163.205.23.44', frequency=345, totalBytes=965636, averageSize=2798.9449275362317)
+Row(host=u'scooter.pa-x.dec.com', frequency=346, totalBytes=6034034, averageSize=17439.404624277457)
+Row(host=u'gwa.ericsson.com', frequency=347, totalBytes=13440680, averageSize=38733.94812680115)
+Row(host=u'163.205.12.100', frequency=348, totalBytes=470667, averageSize=1352.4913793103449)
+Row(host=u'140.229.116.37', frequency=349, totalBytes=5470545, averageSize=15674.914040114612)
+Row(host=u'ftp.mel.aone.net.au', frequency=350, totalBytes=6375990, averageSize=18217.114285714284)
+Row(host=u'vewer.sso.az.honeywell.com', frequency=354, totalBytes=1305244, averageSize=3687.129943502825)
+Row(host=u'198.83.19.43', frequency=354, totalBytes=7416253, averageSize=20949.867231638418)
+Row(host=u'pfizergate.pfizer.com', frequency=354, totalBytes=9241902, averageSize=26107.06779661017)
+Row(host=u'proxy.bellatlantic.com', frequency=355, totalBytes=9771774, averageSize=27526.123943661973)
+Row(host=u'152.163.192.7', frequency=356, totalBytes=3857799, averageSize=10836.51404494382)
+Row(host=u'130.110.74.81', frequency=357, totalBytes=20371533, averageSize=57063.117647058825)
+Row(host=u'152.163.192.67', frequency=359, totalBytes=5095400, averageSize=14193.314763231198)
+Row(host=u'nntp1.reach.com', frequency=361, totalBytes=5238554, averageSize=14511.229916897508)
+Row(host=u'www-c8.proxy.aol.com', frequency=362, totalBytes=7322374, averageSize=20227.552486187844)
+Row(host=u'163.205.154.11', frequency=364, totalBytes=1018651, averageSize=2798.4917582417584)
+Row(host=u'ottgate2.bnr.ca', frequency=365, totalBytes=5582302, averageSize=15293.978082191781)
+Row(host=u'163.205.16.100', frequency=368, totalBytes=1055656, averageSize=2868.6304347826085)
+Row(host=u'duckling.omsi.edu', frequency=368, totalBytes=12283276, averageSize=33378.467391304344)
+Row(host=u'199.201.186.103', frequency=370, totalBytes=1863849, averageSize=5037.42972972973)
+Row(host=u'bdmgate.bdm.com', frequency=372, totalBytes=9524049, averageSize=25602.282258064515)
+Row(host=u'163.206.136.1', frequency=372, totalBytes=2596624, averageSize=6980.1720430107525)
+Row(host=u'152.163.192.69', frequency=373, totalBytes=4470065, averageSize=11984.088471849866)
+Row(host=u'gate.chips.ibm.com', frequency=376, totalBytes=19595028, averageSize=52114.436170212764)
+Row(host=u'hpfcla.fc.hp.com', frequency=377, totalBytes=10949477, averageSize=29043.70557029178)
+Row(host=u'sophocles.algonet.se', frequency=380, totalBytes=7127268, averageSize=18755.968421052632)
+Row(host=u'n1144796.ksc.nasa.gov', frequency=381, totalBytes=2266028, averageSize=5947.580052493438)
+Row(host=u'n1123543.ksc.nasa.gov', frequency=383, totalBytes=3749143, averageSize=9788.885117493473)
+Row(host=u'public.lasc.lockheed.com', frequency=385, totalBytes=6493900, averageSize=16867.272727272728)
+Row(host=u'magicall.dacom.co.kr', frequency=388, totalBytes=8990469, averageSize=23171.311855670105)
+Row(host=u'quadra_echo.rollins.edu', frequency=389, totalBytes=8225365, averageSize=21144.897172236502)
+Row(host=u'128.32.196.94', frequency=389, totalBytes=11834773, averageSize=30423.580976863752)
+Row(host=u'163.205.23.93', frequency=390, totalBytes=978130, averageSize=2508.025641025641)
+Row(host=u'n1031701.ksc.nasa.gov', frequency=391, totalBytes=1062336, averageSize=2716.9718670076727)
+Row(host=u'152.163.192.36', frequency=391, totalBytes=6026519, averageSize=15413.092071611252)
+Row(host=u'129.239.68.160', frequency=396, totalBytes=1612704, averageSize=4072.4848484848485)
+Row(host=u'128.159.122.14', frequency=398, totalBytes=1934004, averageSize=4859.306532663317)
+Row(host=u'cbxguy.vip.best.com', frequency=400, totalBytes=2029736, averageSize=5074.34)
+Row(host=u'bnl871c.ags.bnl.gov', frequency=402, totalBytes=5482180, averageSize=13637.26368159204)
+Row(host=u'152.163.192.70', frequency=402, totalBytes=8691714, averageSize=21621.17910447761)
+Row(host=u'128.159.122.38', frequency=403, totalBytes=2243395, averageSize=5566.736972704714)
+Row(host=u'n868370.ksc.nasa.gov', frequency=403, totalBytes=1866286, averageSize=4630.9826302729525)
+Row(host=u'igate.uswest.com', frequency=404, totalBytes=9824759, averageSize=24318.710396039605)
+Row(host=u'erigate.ericsson.se', frequency=408, totalBytes=8740629, averageSize=21423.110294117647)
+Row(host=u'waldtsvr.ksc.nasa.gov', frequency=410, totalBytes=11441951, averageSize=27907.19756097561)
+Row(host=u'bbuig150.unisys.com', frequency=412, totalBytes=15339249, averageSize=37231.186893203885)
+Row(host=u'204.62.245.32', frequency=413, totalBytes=6853500, averageSize=16594.430992736077)
+Row(host=u'n1123209.ksc.nasa.gov', frequency=413, totalBytes=1299425, averageSize=3146.3075060532688)
+Row(host=u'152.163.192.71', frequency=413, totalBytes=8411488, averageSize=20366.799031476996)
+Row(host=u'nirvana1.ultranet.com', frequency=414, totalBytes=11077072, averageSize=26756.212560386473)
+Row(host=u'www-e1e.gnn.com', frequency=416, totalBytes=6317931, averageSize=15187.334134615385)
+Row(host=u'152.163.192.35', frequency=421, totalBytes=7654696, averageSize=18182.175771971495)
+Row(host=u'163.206.104.34', frequency=425, totalBytes=539779, averageSize=1270.0682352941176)
+Row(host=u'n1131455.ksc.nasa.gov', frequency=427, totalBytes=1081820, averageSize=2533.536299765808)
+Row(host=u'163.206.140.4', frequency=431, totalBytes=15534926, averageSize=36043.91183294664)
+Row(host=u'152.163.192.38', frequency=432, totalBytes=6277297, averageSize=14530.780092592593)
+Row(host=u'128.159.122.137', frequency=433, totalBytes=3058167, averageSize=7062.741339491917)
+Row(host=u'n1123413.ksc.nasa.gov', frequency=434, totalBytes=1149672, averageSize=2649.0138248847925)
+Row(host=u'metabelis.rmit.edu.au', frequency=435, totalBytes=13135755, averageSize=30197.137931034482)
+Row(host=u'128.217.62.2', frequency=436, totalBytes=4580736, averageSize=10506.275229357798)
+Row(host=u'u139.n72.queensu.ca', frequency=439, totalBytes=9816105, averageSize=22360.148063781322)
+Row(host=u'163.205.23.76', frequency=442, totalBytes=1206058, averageSize=2728.6380090497737)
+Row(host=u'198.83.19.47', frequency=443, totalBytes=5826826, averageSize=13153.106094808127)
+Row(host=u'www-e1f.gnn.com', frequency=447, totalBytes=18944788, averageSize=42382.07606263982)
+Row(host=u'198.83.19.40', frequency=448, totalBytes=7159925, averageSize=15981.97544642857)
+Row(host=u'beta.xerox.com', frequency=449, totalBytes=9254681, averageSize=20611.761692650332)
+Row(host=u'192.77.40.4', frequency=455, totalBytes=4634910, averageSize=10186.615384615385)
+Row(host=u'relay02.jpmorgan.com', frequency=460, totalBytes=8736215, averageSize=18991.771739130436)
+Row(host=u'smokey.arnold.af.mil', frequency=460, totalBytes=7496119, averageSize=16295.910869565218)
+Row(host=u'arc.dental.upenn.edu', frequency=461, totalBytes=20227726, averageSize=43877.930585683294)
+Row(host=u'128.159.122.180', frequency=462, totalBytes=2272829, averageSize=4919.54329004329)
+Row(host=u'128.159.122.110', frequency=465, totalBytes=3314973, averageSize=7128.974193548387)
+Row(host=u'gatekeeper.ray.com', frequency=469, totalBytes=12695338, averageSize=27068.950959488273)
+Row(host=u'128.159.146.40', frequency=473, totalBytes=1767621, averageSize=3737.042283298097)
+Row(host=u'lsda05.jsc.nasa.gov', frequency=474, totalBytes=4773229, averageSize=10070.103375527426)
+Row(host=u'152.163.192.5', frequency=480, totalBytes=10174113, averageSize=21196.06875)
+Row(host=u'afdd.arc.nasa.gov', frequency=482, totalBytes=334749, averageSize=694.5)
+Row(host=u'ntigate.nt.com', frequency=486, totalBytes=17070073, averageSize=35123.60699588477)
+Row(host=u'fkirchman.gsfc.nasa.gov', frequency=490, totalBytes=10679336, averageSize=21794.563265306122)
+Row(host=u'hpcvsop.cv.hp.com', frequency=498, totalBytes=15897234, averageSize=31922.156626506025)
+Row(host=u'tide01.microsoft.com', frequency=499, totalBytes=8669886, averageSize=17374.52104208417)
+Row(host=u'n1040681.ksc.nasa.gov', frequency=499, totalBytes=1515579, averageSize=3037.23246492986)
+Row(host=u'n1376232.ksc.nasa.gov', frequency=502, totalBytes=1323502, averageSize=2636.4581673306775)
+Row(host=u'128.217.62.224', frequency=507, totalBytes=3474111, averageSize=6852.289940828402)
+Row(host=u'wwwproxy.sanders.com', frequency=508, totalBytes=9572701, averageSize=18843.899606299212)
+Row(host=u'tia1.eskimo.com', frequency=509, totalBytes=7655745, averageSize=15040.756385068762)
+Row(host=u'ftp-relay.mv.us.adobe.com', frequency=513, totalBytes=18490797, averageSize=36044.43859649123)
+Row(host=u'gatekeeper.mitre.org', frequency=514, totalBytes=12634096, averageSize=24579.953307392996)
+Row(host=u'nidhogg.srl.caltech.edu', frequency=517, totalBytes=109627, averageSize=212.04448742746615)
+Row(host=u'128.159.132.56', frequency=521, totalBytes=7551645, averageSize=14494.520153550864)
+Row(host=u'proxy0.research.att.com', frequency=529, totalBytes=11859250, averageSize=22418.241965973535)
+Row(host=u'199.1.50.225', frequency=536, totalBytes=2991708, averageSize=5581.544776119403)
+Row(host=u'128.159.111.141', frequency=546, totalBytes=2780618, averageSize=5092.706959706959)
+Row(host=u'news.dfrc.nasa.gov', frequency=554, totalBytes=1034390, averageSize=1867.129963898917)
+Row(host=u'heimdallp2.compaq.com', frequency=559, totalBytes=27080427, averageSize=48444.41323792487)
+Row(host=u'128.159.122.107', frequency=563, totalBytes=3778814, averageSize=6711.925399644761)
+Row(host=u'lamar.d48.lilly.com', frequency=576, totalBytes=12573795, averageSize=21829.505208333332)
+Row(host=u'141.102.82.127', frequency=578, totalBytes=2690676, averageSize=4655.148788927336)
+Row(host=u'amdext.amd.com', frequency=590, totalBytes=11356142, averageSize=19247.698305084745)
+Row(host=u'128.159.144.83', frequency=597, totalBytes=5277498, averageSize=8840.03015075377)
+Row(host=u'pc24.ac.tandem.com', frequency=604, totalBytes=6395710, averageSize=10588.923841059603)
+Row(host=u'139.169.174.102', frequency=610, totalBytes=37656200, averageSize=61731.475409836065)
+Row(host=u'rmcg.cts.com', frequency=625, totalBytes=5692292, averageSize=9107.6672)
+Row(host=u'gatekeeper.cca.rockwell.com', frequency=629, totalBytes=47586108, averageSize=75653.58982511924)
+Row(host=u'n1121796.ksc.nasa.gov', frequency=632, totalBytes=1691920, averageSize=2677.0886075949365)
+Row(host=u'163.205.3.104', frequency=634, totalBytes=3482892, averageSize=5493.520504731861)
+Row(host=u'jericho2.microsoft.com', frequency=647, totalBytes=14718747, averageSize=22749.22256568779)
+Row(host=u'198.83.19.44', frequency=647, totalBytes=11279260, averageSize=17433.168469860895)
+Row(host=u'inet2.tek.com', frequency=649, totalBytes=14135000, averageSize=21779.661016949154)
+Row(host=u'stortek1.stortek.com', frequency=654, totalBytes=17820210, averageSize=27248.02752293578)
+Row(host=u'sahp315.sandia.gov', frequency=656, totalBytes=18152817, averageSize=27671.977134146342)
+Row(host=u'spider.tbe.com', frequency=672, totalBytes=14468684, averageSize=21530.779761904763)
+Row(host=u'206.27.25.1', frequency=672, totalBytes=7996616, averageSize=11899.72619047619)
+Row(host=u'proxy.austin.ibm.com', frequency=677, totalBytes=14363635, averageSize=21216.5952732644)
+Row(host=u'gw4.att.com', frequency=683, totalBytes=23138743, averageSize=33878.10102489019)
+Row(host=u'koriel.sun.com', frequency=688, totalBytes=14185942, averageSize=20619.101744186046)
+Row(host=u'163.205.16.75', frequency=690, totalBytes=3941911, averageSize=5712.914492753624)
+Row(host=u'jericho3.microsoft.com', frequency=691, totalBytes=12687909, averageSize=18361.662807525325)
+Row(host=u'163.205.11.31', frequency=692, totalBytes=9398010, averageSize=13580.939306358381)
+Row(host=u'bambi.te.rl.ac.uk', frequency=701, totalBytes=39326088, averageSize=56099.982881597716)
+Row(host=u'corpgate.nt.com', frequency=705, totalBytes=31713743, averageSize=44984.032624113475)
+Row(host=u'163.206.137.21', frequency=713, totalBytes=21417965, averageSize=30039.22159887798)
+Row(host=u'sdn_b6_f02_ip.dny.rockwell.com', frequency=722, totalBytes=10563941, averageSize=14631.497229916897)
+Row(host=u'whopkins.sso.az.honeywell.com', frequency=723, totalBytes=4251974, averageSize=5881.015214384509)
+Row(host=u'interlock.turner.com', frequency=727, totalBytes=21832076, averageSize=30030.365887207703)
+Row(host=u'piweba2y.prodigy.com', frequency=770, totalBytes=18069700, averageSize=23467.14285714286)
+Row(host=u'163.205.19.20', frequency=772, totalBytes=213906, averageSize=277.080310880829)
+Row(host=u'cliffy.lfwc.lockheed.com', frequency=800, totalBytes=26351069, averageSize=32938.83625)
+Row(host=u'gw3.att.com', frequency=814, totalBytes=13708140, averageSize=16840.46683046683)
+Row(host=u'bocagate.bocaraton.ibm.com', frequency=820, totalBytes=24490339, averageSize=29866.267073170733)
+Row(host=u'sgigate.sgi.com', frequency=820, totalBytes=15259558, averageSize=18609.21707317073)
+Row(host=u'bstfirewall.bst.bls.com', frequency=850, totalBytes=16852515, averageSize=19826.488235294117)
+Row(host=u'tiber.gsfc.nasa.gov', frequency=859, totalBytes=9408581, averageSize=10952.94644935972)
+Row(host=u'keyhole.es.dupont.com', frequency=887, totalBytes=20757053, averageSize=23401.412626832018)
+Row(host=u'128.217.62.1', frequency=888, totalBytes=4098711, averageSize=4615.665540540541)
+Row(host=u'n1144637.ksc.nasa.gov', frequency=893, totalBytes=2354828, averageSize=2636.985442329227)
+Row(host=u'trusty.lmsc.lockheed.com', frequency=962, totalBytes=13739222, averageSize=14281.93555093555)
+Row(host=u'gn2.getnet.com', frequency=985, totalBytes=22351555, averageSize=22691.934010152283)
+Row(host=u'derec', frequency=996, totalBytes=10722479, averageSize=10765.541164658634)
+Row(host=u'gw1.att.com', frequency=1044, totalBytes=11654651, averageSize=11163.458812260536)
+Row(host=u'163.205.1.19', frequency=1047, totalBytes=13439720, averageSize=12836.408787010507)
+Row(host=u'disarray.demon.co.uk', frequency=1048, totalBytes=19913526, averageSize=19001.456106870228)
+Row(host=u'163.205.156.16', frequency=1060, totalBytes=6608944, averageSize=6234.852830188679)
+Row(host=u'palona1.cns.hp.com', frequency=1277, totalBytes=38031395, averageSize=29781.82850430697)
+Row(host=u'gw2.att.com', frequency=1385, totalBytes=34812279, averageSize=25135.21949458484)
+Row(host=u'vagrant.vf.mmc.com', frequency=1391, totalBytes=23082794, averageSize=16594.38820992092)
+Row(host=u'www-proxy.crl.research.digital.com', frequency=1407, totalBytes=33657794, averageSize=23921.67306325515)
+Row(host=u'poppy.hensa.ac.uk', frequency=1567, totalBytes=35886760, averageSize=22901.569878749204)
+Row(host=u'webgate1.mot.com', frequency=1619, totalBytes=48690588, averageSize=30074.4830142063)
+Row(host=u'piweba1y.prodigy.com', frequency=1778, totalBytes=45566682, averageSize=25628.055118110235)
+Row(host=u'intgate.raleigh.ibm.com', frequency=1816, totalBytes=36946808, averageSize=20345.15859030837)
+Row(host=u'mpngate1.ny.us.ibm.net', frequency=1936, totalBytes=43074695, averageSize=22249.325929752067)
+Row(host=u'e659229.boeing.com', frequency=2006, totalBytes=58901629, averageSize=29362.72632103689)
+Row(host=u'www-relay.pa-x.dec.com', frequency=2027, totalBytes=76686318, averageSize=37832.42131228416)
+Row(host=u'www-a1.proxy.aol.com', frequency=2086, totalBytes=39644669, averageSize=19005.114573346116)
+Row(host=u'www-c1.proxy.aol.com', frequency=2097, totalBytes=40583770, averageSize=19353.252265140676)
+Row(host=u'www-c6.proxy.aol.com', frequency=2181, totalBytes=44162554, averageSize=20248.763869784503)
+Row(host=u'www-c5.proxy.aol.com', frequency=2198, totalBytes=42733720, averageSize=19442.09281164695)
+Row(host=u'www-c4.proxy.aol.com', frequency=2207, totalBytes=33116095, averageSize=15005.027186225645)
+Row(host=u'www-a2.proxy.aol.com', frequency=2238, totalBytes=38032188, averageSize=16993.82841823056)
+Row(host=u'www-d3.proxy.aol.com', frequency=2284, totalBytes=45583046, averageSize=19957.55078809107)
+Row(host=u'www-b4.proxy.aol.com', frequency=2297, totalBytes=38351905, averageSize=16696.519373095343)
+Row(host=u'www-b5.proxy.aol.com', frequency=2354, totalBytes=41226645, averageSize=17513.443075615975)
+Row(host=u'www-d4.proxy.aol.com', frequency=2356, totalBytes=37909020, averageSize=16090.41595925297)
+Row(host=u'www-d2.proxy.aol.com', frequency=2371, totalBytes=43844221, averageSize=18491.868831716576)
+Row(host=u'www-c3.proxy.aol.com', frequency=2400, totalBytes=42967191, averageSize=17902.99625)
+Row(host=u'www-c2.proxy.aol.com', frequency=2438, totalBytes=50968465, averageSize=20905.851107465136)
+Row(host=u'163.206.89.4', frequency=2478, totalBytes=50526469, averageSize=20390.0197740113)
+Row(host=u'www-b2.proxy.aol.com', frequency=2481, totalBytes=40928280, averageSize=16496.686819830713)
+Row(host=u'news.ti.com', frequency=2507, totalBytes=79693554, averageSize=31788.41404068608)
+Row(host=u'www-b3.proxy.aol.com', frequency=2518, totalBytes=48803474, averageSize=19381.84034948372)
+Row(host=u'www-d1.proxy.aol.com', frequency=2715, totalBytes=42753534, averageSize=15747.158011049723)
+Row(host=u'piweba3y.prodigy.com', frequency=2830, totalBytes=54111344, averageSize=19120.61625441696)
+Row(host=u'piweba4y.prodigy.com', frequency=3043, totalBytes=45608236, averageSize=14987.918501478804)
+Row(host=u'piweba5y.prodigy.com', frequency=3237, totalBytes=72333166, averageSize=22345.74173617547)
+Row(host=u'edams.ksc.nasa.gov', frequency=4034, totalBytes=31736021, averageSize=7867.134605850272)
+guptanayancy@e2e-27-153:~$ vi 16_SparkSQL.py
+guptanayancy@e2e-27-153:~$ cd /etc/hadoop/conf/
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cat core_site.xml
+cat: core_site.xml: No such file or directory
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ vi coresite.xml
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cat yarnsite.xml
+cat: yarnsite.xml: No such file or directory
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cat yarn_site.xml
+cat: yarn_site.xml: No such file or directory
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cat yarn-site.xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Autogenerated by Cloudera Manager-->
+<configuration>
+  <property>
+    <name>yarn.acl.enable</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>yarn.admin.acl</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>e2e-27-137.e2enetworks.net.in:8032</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value>e2e-27-137.e2enetworks.net.in:8033</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>e2e-27-137.e2enetworks.net.in:8030</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>e2e-27-137.e2enetworks.net.in:8031</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>e2e-27-137.e2enetworks.net.in:19099</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.webapp.https.address</name>
+    <value>e2e-27-137.e2enetworks.net.in:8090</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.client.thread-count</name>
+    <value>50</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.scheduler.client.thread-count</name>
+    <value>50</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.admin.client.thread-count</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>512</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.increment-allocation-mb</name>
+    <value>512</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>2560</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.minimum-allocation-vcores</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.increment-allocation-vcores</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-vcores</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.amliveliness-monitor.interval-ms</name>
+    <value>1000</value>
+  </property>
+  <property>
+    <name>yarn.am.liveness-monitor.expiry-interval-ms</name>
+    <value>600000</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.am.max-attempts</name>
+    <value>2</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.container.liveness-monitor.interval-ms</name>
+    <value>600000</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.nm.liveness-monitor.interval-ms</name>
+    <value>1000</value>
+  </property>
+  <property>
+    <name>yarn.nm.liveness-monitor.expiry-interval-ms</name>
+    <value>600000</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.client.thread-count</name>
+    <value>50</value>
+  </property>
+  <property>
+    <name>yarn.application.classpath</name>
+    <value>$HADOOP_CLIENT_CONF_DIR,$HADOOP_CONF_DIR,$HADOOP_COMMON_HOME/*,$HADOOP_COMMON_HOME/lib/*,$HADOOP_HDFS_HOME/*,$HADOOP_HDFS_HOME/lib/*,$HADOOP_YARN_HOME/*,$HADOOP_YARN_HOME/lib/*</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.scheduler.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.max-completed-applications</name>
+    <value>10000</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.remote-app-log-dir</name>
+    <value>/tmp/logs</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.remote-app-log-dir-suffix</name>
+    <value>logs</value>
+  </property>
+</configuration>
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ ^C
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cat core-site.xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Autogenerated by Cloudera Manager-->
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://e2e-27-137.e2enetworks.net.in:8020</value>
+  </property>
+  <property>
+    <name>fs.trash.interval</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>io.compression.codecs</name>
+    <value>org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.BZip2Codec,org.apache.hadoop.io.compress.DeflateCodec,org.apache.hadoop.io.compress.SnappyCodec,org.apache.hadoop.io.compress.Lz4Codec</value>
+  </property>
+  <property>
+    <name>hadoop.security.authentication</name>
+    <value>simple</value>
+  </property>
+  <property>
+    <name>hadoop.security.authorization</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hadoop.rpc.protection</name>
+    <value>authentication</value>
+  </property>
+  <property>
+    <name>hadoop.security.auth_to_local</name>
+    <value>DEFAULT</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.oozie.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.oozie.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.mapred.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.mapred.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.flume.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.flume.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.HTTP.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.HTTP.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hive.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hive.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.httpfs.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.httpfs.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hdfs.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hdfs.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.yarn.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.yarn.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.security.group.mapping</name>
+    <value>org.apache.hadoop.security.ShellBasedUnixGroupsMapping</value>
+  </property>
+  <property>
+    <name>hadoop.security.instrumentation.requires.admin</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>net.topology.script.file.name</name>
+    <value>/etc/hadoop/conf.cloudera.yarn/topology.py</value>
+  </property>
+  <property>
+    <name>io.file.buffer.size</name>
+    <value>65536</value>
+  </property>
+  <property>
+    <name>hadoop.ssl.enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hadoop.ssl.require.client.cert</name>
+    <value>false</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.keystores.factory.class</name>
+    <value>org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.server.conf</name>
+    <value>ssl-server.xml</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.client.conf</name>
+    <value>ssl-client.xml</value>
+    <final>true</final>
+  </property>
+</configuration>
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cat core-site.xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Autogenerated by Cloudera Manager-->
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://e2e-27-137.e2enetworks.net.in:8020</value>
+  </property>
+  <property>
+    <name>fs.trash.interval</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>io.compression.codecs</name>
+    <value>org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.BZip2Codec,org.apache.hadoop.io.compress.DeflateCodec,org.apache.hadoop.io.compress.SnappyCodec,org.apache.hadoop.io.compress.Lz4Codec</value>
+  </property>
+  <property>
+    <name>hadoop.security.authentication</name>
+    <value>simple</value>
+  </property>
+  <property>
+    <name>hadoop.security.authorization</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hadoop.rpc.protection</name>
+    <value>authentication</value>
+  </property>
+  <property>
+    <name>hadoop.security.auth_to_local</name>
+    <value>DEFAULT</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.oozie.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.oozie.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.mapred.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.mapred.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.flume.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.flume.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.HTTP.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.HTTP.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hive.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hive.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.httpfs.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.httpfs.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hdfs.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hdfs.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.yarn.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.yarn.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.security.group.mapping</name>
+    <value>org.apache.hadoop.security.ShellBasedUnixGroupsMapping</value>
+  </property>
+  <property>
+    <name>hadoop.security.instrumentation.requires.admin</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>net.topology.script.file.name</name>
+    <value>/etc/hadoop/conf.cloudera.yarn/topology.py</value>
+  </property>
+  <property>
+    <name>io.file.buffer.size</name>
+    <value>65536</value>
+  </property>
+  <property>
+    <name>hadoop.ssl.enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hadoop.ssl.require.client.cert</name>
+    <value>false</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.keystores.factory.class</name>
+    <value>org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.server.conf</name>
+    <value>ssl-server.xml</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.client.conf</name>
+    <value>ssl-client.xml</value>
+    <final>true</final>
+  </property>
+</configuration>
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ ^C
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cat core-site.xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Autogenerated by Cloudera Manager-->
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://e2e-27-137.e2enetworks.net.in:8020</value>
+  </property>
+  <property>
+    <name>fs.trash.interval</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>io.compression.codecs</name>
+    <value>org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.BZip2Codec,org.apache.hadoop.io.compress.DeflateCodec,org.apache.hadoop.io.compress.SnappyCodec,org.apache.hadoop.io.compress.Lz4Codec</value>
+  </property>
+  <property>
+    <name>hadoop.security.authentication</name>
+    <value>simple</value>
+  </property>
+  <property>
+    <name>hadoop.security.authorization</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hadoop.rpc.protection</name>
+    <value>authentication</value>
+  </property>
+  <property>
+    <name>hadoop.security.auth_to_local</name>
+    <value>DEFAULT</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.oozie.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.oozie.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.mapred.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.mapred.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.flume.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.flume.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.HTTP.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.HTTP.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hive.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hive.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.httpfs.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.httpfs.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hdfs.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hdfs.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.yarn.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.yarn.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.security.group.mapping</name>
+    <value>org.apache.hadoop.security.ShellBasedUnixGroupsMapping</value>
+  </property>
+  <property>
+    <name>hadoop.security.instrumentation.requires.admin</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>net.topology.script.file.name</name>
+    <value>/etc/hadoop/conf.cloudera.yarn/topology.py</value>
+  </property>
+  <property>
+    <name>io.file.buffer.size</name>
+    <value>65536</value>
+  </property>
+  <property>
+    <name>hadoop.ssl.enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hadoop.ssl.require.client.cert</name>
+    <value>false</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.keystores.factory.class</name>
+    <value>org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.server.conf</name>
+    <value>ssl-server.xml</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.ssl.client.conf</name>
+    <value>ssl-client.xml</value>
+    <final>true</final>
+  </property>
+</configuration>
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ ^C
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ ^C
+guptanayancy@e2e-27-153:/etc/hadoop/conf$ cd ..
+guptanayancy@e2e-27-153:/etc/hadoop$ cd ...
+-bash: cd: ...: No such file or directory
+guptanayancy@e2e-27-153:/etc/hadoop$ cd ..
+guptanayancy@e2e-27-153:/etc$ cd
+guptanayancy@e2e-27-153:~$ cd case1
+guptanayancy@e2e-27-153:~/case1$ vi job.xml
+guptanayancy@e2e-27-153:~/case1$ vi job.properties
+guptanayancy@e2e-27-153:~/case1$ vi workflow.xml
+guptanayancy@e2e-27-153:~/case1$ hadoop fs -copyFromLocal /home/guptanayancy/case1 /user/guptanayancy/
+guptanayancy@e2e-27-153:~/case1$ hue
+No command 'hue' found, did you mean:
+ Command 'huh' from package 'orville-write' (universe)
+ Command 'hte' from package 'ht' (universe)
+hue: command not found
+guptanayancy@e2e-27-153:~/case1$ cd
+guptanayancy@e2e-27-153:~$
+guptanayancy@e2e-27-153:~$
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -run
+job: 0000004-170721155819487-oozie-oozi-W
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /user/guptanayancy/case1/job.properties
+-rw-r--r--   3 guptanayancy labusers        232 2017-07-22 17:52 /user/guptanayancy/case1/job.properties
+guptanayancy@e2e-27-153:~$ hadoop fs -cat /user/guptanayancy/case1/job.properties
+nameNode=hdfs://e2e-27-137.e2enetworks.net.in:8020
+jobTracker=hdfs://e2e-27-137.e2enetworks.net.in:8020
+queueName=default
+oozie.use.system.libpath=true
+oozie.wf.application.path=${nameNode}/user/${user.name}/case1
+includeWarranty=1
+guptanayancy@e2e-27-153:~$ hadoop fs -vi /user/guptanayancy/case1/job.properties
+-vi: Unknown command
+guptanayancy@e2e-27-153:~$ vi case1/job.properties
+guptanayancy@e2e-27-153:~$ hadoop fs -copyFromLocal /home/guptanayancy/case1/job.properties /user/guptanayancy/case1/
+copyFromLocal: `/user/guptanayancy/case1/job.properties': File exists
+guptanayancy@e2e-27-153:~$ hadoop fs -rm /user/guptanayancy/case1/job.properties
+17/07/22 18:04:59 INFO fs.TrashPolicyDefault: Moved: 'hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1/job.properties' to trash at: hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/.Trash/Current/user/guptanayancy/case1/job.properties
+guptanayancy@e2e-27-153:~$ hadoop fs -copyFromLocal /home/guptanayancy/case1/job.properties /user/guptanayancy/case1/
+guptanayancy@e2e-27-153:~$ hadoop fs -cat /user/guptanayancy/case1/job.properties
+nameNode=hdfs://e2e-27-137.e2enetworks.net.in:8020
+jobTracker=e2e-27-137.e2enetworks.net.in:8032
+queueName=default
+oozie.use.system.libpath=true
+oozie.wf.application.path=${nameNode}/user/${user.name}/case1
+includeWarranty=1
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ hadoop fs -cat /user/guptanayancy/case1/workflow.xml
+<workflow-app xmlns="uri:oozie:workflow:0.2" name="java-main-wf">
+
+    <start to="Check"/>
+
+    <action name="Check">
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <main-class>test.example.Check</main-class>
+            <capture-output/>
+        </java>
+        <ok to="PIG1"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG1">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig1.pig</script>
+        </pig>
+        <ok to="PIG2"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG2">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp2"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig2.pig</script>
+        </pig>
+        <ok to="decide"/>
+        <error to="fail"/>
+    </action>
+
+    <decision name="decide">
+        <switch>
+            <case to="PIG3"> ${wf:actionData('Check')['W'] eq '1'}</case>
+            <default to="FS1"/>
+        </switch>
+    </decision>
+
+    <action name="PIG3">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp3"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig3.pig</script>
+        </pig>
+        <ok to="PIG4"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="FS1">
+        <fs>
+        <move source='${nameNode}/user/guptanayancy/case1/sales_history_temp2' target='${nameNode}/user/guptanayancy/case1/sales_history_temp3'/>
+        </fs>
+        <ok to="PIG4"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG4">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp4"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig4.pig</script>
+        </pig>
+        <ok to="HIVE1"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="HIVE1">
+        <hive xmlns="uri:oozie:hive-action:0.2">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare> <delete path="${nameNode}/user/${wf:user()}/case1/out"/> </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>hive1.q</script>
+            <param>INPUT=/user/${wf:user()}/case1/sales_history_temp4</param>
+            <param>OUTPUT=/user/${wf:user()}/case1/out</param>
+        </hive>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+
+
+    <kill name="fail">
+        <message>Java failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+    <end name="end"/>
+
+</workflow-app>
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ hadoop fs -cat /user/guptanayancy/case1/job.properties                                                                                       nameNode=hdfs://e2e-27-137.e2enetworks.net.in:8020
+jobTracker=e2e-27-137.e2enetworks.net.in:8032
+queueName=default
+oozie.use.system.libpath=true
+oozie.wf.application.path=${nameNode}/user/${user.name}/case1
+includeWarranty=1
+guptanayancy@e2e-27-153:~$ hadoop fs -ls /
+Found 4 items
+drwxr-xr-x   - hbase hbase               0 2017-07-21 10:35 /hbase
+drwxrwxrwx   - hdfs  supergroup          0 2017-07-08 19:25 /rhive
+drwxrwxrwt   - hdfs  supergroup          0 2017-07-22 18:02 /tmp
+drwxr-xr-x   - hdfs  supergroup          0 2017-07-22 12:42 /user
+guptanayancy@e2e-27-153:~$ hadoop fs -ls
+Found 8 items
+drwx------   - guptanayancy labusers          0 2017-07-22 18:04 .Trash
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 .sparkStaging
+drwx------   - guptanayancy labusers          0 2017-07-09 13:54 .staging
+-rw-r--r--   3 guptanayancy labusers  111503503 2017-07-22 16:53 apache.access.log.PROJECT
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 18:05 case1
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 17:55 oozie-oozi
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 16:56 sparksql
+-rw-r--r--   3 guptanayancy labusers         42 2017-07-15 18:33 sql.txt
+guptanayancy@e2e-27-153:~$ hadoop fs -ls case1
+Found 13 items
+-rw-r--r--   3 guptanayancy labusers        289 2017-07-22 17:52 case1/hive1.q
+-rw-r--r--   3 guptanayancy labusers        485 2017-07-22 17:52 case1/hive2.q
+-rw-r--r--   3 guptanayancy labusers        237 2017-07-22 17:52 case1/item_master.txt
+-rw-r--r--   3 guptanayancy labusers        225 2017-07-22 18:05 case1/job.properties
+drwxr-xr-x   - guptanayancy labusers          0 2017-07-22 17:52 case1/lib
+-rw-r--r--   3 guptanayancy labusers        604 2017-07-22 17:52 case1/pig1.pig
+-rw-r--r--   3 guptanayancy labusers        961 2017-07-22 17:52 case1/pig2.pig
+-rw-r--r--   3 guptanayancy labusers        514 2017-07-22 17:52 case1/pig3.pig
+-rw-r--r--   3 guptanayancy labusers        560 2017-07-22 17:52 case1/pig4.pig
+-rw-r--r--   3 guptanayancy labusers         55 2017-07-22 17:52 case1/promotion.txt
+-rw-r--r--   3 guptanayancy labusers        311 2017-07-22 17:52 case1/sales_history.txt
+-rw-r--r--   3 guptanayancy labusers        134 2017-07-22 17:52 case1/script.q
+-rw-r--r--   3 guptanayancy labusers       4312 2017-07-22 17:52 case1/workflow.xml
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ hadoop fs -cat /user/guptanayancy/case1/workflow.xml                                                                                         <workflow-app xmlns="uri:oozie:workflow:0.2" name="java-main-wf">
+
+    <start to="Check"/>
+
+    <action name="Check">
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <main-class>test.example.Check</main-class>
+            <capture-output/>
+        </java>
+        <ok to="PIG1"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG1">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig1.pig</script>
+        </pig>
+        <ok to="PIG2"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG2">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp2"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig2.pig</script>
+        </pig>
+        <ok to="decide"/>
+        <error to="fail"/>
+    </action>
+
+    <decision name="decide">
+        <switch>
+            <case to="PIG3"> ${wf:actionData('Check')['W'] eq '1'}</case>
+            <default to="FS1"/>
+        </switch>
+    </decision>
+
+    <action name="PIG3">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp3"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig3.pig</script>
+        </pig>
+        <ok to="PIG4"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="FS1">
+        <fs>
+        <move source='${nameNode}/user/guptanayancy/case1/sales_history_temp2' target='${nameNode}/user/guptanayancy/case1/sales_history_temp3'/>
+        </fs>
+        <ok to="PIG4"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="PIG4">
+        <pig>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${nameNode}/user/${wf:user()}/case1/sales_history_temp4"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>pig4.pig</script>
+        </pig>
+        <ok to="HIVE1"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="HIVE1">
+        <hive xmlns="uri:oozie:hive-action:0.2">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare> <delete path="${nameNode}/user/${wf:user()}/case1/out"/> </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <script>hive1.q</script>
+            <param>INPUT=/user/${wf:user()}/case1/sales_history_temp4</param>
+            <param>OUTPUT=/user/${wf:user()}/case1/out</param>
+        </hive>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+
+
+    <kill name="fail">
+        <message>Java failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+    <end name="end"/>
+
+</workflow-app>
+guptanayancy@e2e-27-153:~$ hadoop fs -cat /user/guptanayancy/case1/job.properties
+nameNode=hdfs://e2e-27-137.e2enetworks.net.in:8020
+jobTracker=e2e-27-137.e2enetworks.net.in:8032
+queueName=default
+oozie.use.system.libpath=true
+oozie.wf.application.path=${nameNode}/user/${user.name}/case1
+includeWarranty=1
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info  0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 0000004-170721155819487-oozie-oozi-W
+Job ID : 0000004-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : KILLED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 12:25 GMT
+Started       : 2017-07-22 12:25 GMT
+Last Modified : 2017-07-22 12:25 GMT
+Ended         : 2017-07-22 12:25 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@fail                                     OK        -                      OK         E0729
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@Check                                    ERROR     -                      ERROR      HadoopAccessorException
+------------------------------------------------------------------------------------------------------------------------------------
+0000004-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -run
+job: 0000032-170721155819487-oozie-oozi-W
+guptanayancy@e2e-27-153:~$ ^C
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info job: 0000032-170721155819487-oozie-oozi-W
+Error: E0604 : E0604: Job does not exist [job:]
+guptanayancy@e2e-27-153:~$
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 0000032-170721155819487-oozie-oozi-W
+Job ID : 0000032-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : RUNNING
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 13:21 GMT
+Started       : 2017-07-22 13:21 GMT
+Last Modified : 2017-07-22 13:22 GMT
+Ended         : -
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@Check                                    OK        job_1500551408671_1018 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG1                                     OK        job_1500551408671_1019 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG2                                     RUNNING   job_1500551408671_1024 RUNNING    -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 0000032-170721155819487-oozie-oozi-W
+Job ID : 0000032-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : RUNNING
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 13:21 GMT
+Started       : 2017-07-22 13:21 GMT
+Last Modified : 2017-07-22 13:22 GMT
+Ended         : -
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@Check                                    OK        job_1500551408671_1018 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG1                                     OK        job_1500551408671_1019 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG2                                     RUNNING   job_1500551408671_1024 RUNNING    -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 0000032-170721155819487-oozie-oozi-W
+Job ID : 0000032-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : SUCCEEDED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 13:21 GMT
+Started       : 2017-07-22 13:21 GMT
+Last Modified : 2017-07-22 13:26 GMT
+Ended         : 2017-07-22 13:26 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@Check                                    OK        job_1500551408671_1018 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG1                                     OK        job_1500551408671_1019 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG2                                     OK        job_1500551408671_1024 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@FS1                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG4                                     OK        job_1500551408671_1032 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@decide                                   OK        -                      FS1        -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@HIVE1                                    OK        job_1500551408671_1038 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@end                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 0000032-170721155819487-oozie-oozi-W
+Job ID : 0000032-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : SUCCEEDED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 13:21 GMT
+Started       : 2017-07-22 13:21 GMT
+Last Modified : 2017-07-22 13:26 GMT
+Ended         : 2017-07-22 13:26 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@Check                                    OK        job_1500551408671_1018 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG1                                     OK        job_1500551408671_1019 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG2                                     OK        job_1500551408671_1024 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@FS1                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG4                                     OK        job_1500551408671_1032 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@decide                                   OK        -                      FS1        -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@HIVE1                                    OK        job_1500551408671_1038 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@end                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 0000032-170721155819487-oozie-oozi-W
+Job ID : 0000032-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : SUCCEEDED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 13:21 GMT
+Started       : 2017-07-22 13:21 GMT
+Last Modified : 2017-07-22 13:26 GMT
+Ended         : 2017-07-22 13:26 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@Check                                    OK        job_1500551408671_1018 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG1                                     OK        job_1500551408671_1019 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG2                                     OK        job_1500551408671_1024 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@FS1                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG4                                     OK        job_1500551408671_1032 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@decide                                   OK        -                      FS1        -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@HIVE1                                    OK        job_1500551408671_1038 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@end                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$ oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 0000032-170721155819487-oozie-oozi-W
+Job ID : 0000032-170721155819487-oozie-oozi-W
+------------------------------------------------------------------------------------------------------------------------------------
+Workflow Name : java-main-wf
+App Path      : hdfs://e2e-27-137.e2enetworks.net.in:8020/user/guptanayancy/case1
+Status        : SUCCEEDED
+Run           : 0
+User          : guptanayancy
+Group         : -
+Created       : 2017-07-22 13:21 GMT
+Started       : 2017-07-22 13:21 GMT
+Last Modified : 2017-07-22 13:26 GMT
+Ended         : 2017-07-22 13:26 GMT
+CoordAction ID: -
+
+Actions
+------------------------------------------------------------------------------------------------------------------------------------
+ID                                                                            Status    Ext ID                 Ext Status Err Code
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@Check                                    OK        job_1500551408671_1018 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@:start:                                  OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG1                                     OK        job_1500551408671_1019 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG2                                     OK        job_1500551408671_1024 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@FS1                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@PIG4                                     OK        job_1500551408671_1032 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@decide                                   OK        -                      FS1        -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@HIVE1                                    OK        job_1500551408671_1038 SUCCEEDED  -
+------------------------------------------------------------------------------------------------------------------------------------
+0000032-170721155819487-oozie-oozi-W@end                                      OK        -                      OK         -
+------------------------------------------------------------------------------------------------------------------------------------
+
+guptanayancy@e2e-27-153:~$

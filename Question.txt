@@ -1,0 +1,3 @@
+Q1:can you control the number of mappers in a map reduce program if yes then how?
+
+Q2:

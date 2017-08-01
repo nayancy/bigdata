@@ -1,0 +1,70 @@
+nameNode=hdfs://localhost:9000
+
+jobTracker=localhost:9001
+
+queueName=default
+oozie.use.system.libpath=true
+oozie.wf.application.path=${nameNode}/user/${user.name}/case1
+
+includeWarranty=1
+
+
+
+ <name>yarn.resourcemanager.address</name>
+    <value>e2e-27-137.e2enetworks.net.in:8032</value>
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://e2e-27-137.e2enetworks.net.in:8020</value>
+
+
+
+
+oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -run
+
+
+
+oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 
+0000032-170721155819487-oozie-oozi-W
+
+
+-----------------
+oozie job --oozie -----way to write oozie like hadoop fs -ls
+http://e2e-27-136.e2enetworks.net.in:11000/oozie----oozie server
+-config /home/guptanayancy/case1/job.properties-------set namenode and jobtracker
+
+
+1.edit job.properties in case1 folder--------
+----------------------------------------------
+nameNode=hdfs://e2e-27-137.e2enetworks.net.in:8020
+jobTracker=e2e-27-137.e2enetworks.net.in:8032
+queueName=default
+oozie.use.system.libpath=true
+oozie.wf.application.path=${nameNode}/user/${user.name}/case1
+
+includeWarranty=1
+
+-----------------------------------------
+
+2. edit workflow.xml in case1 folder--------
+--------------------------------------------------
+edit your username in
+ <move source='${nameNode}/user/nitinc/case1/sales_history_temp2' target='${nameNode}/user/nitinc/case1/sales_history_temp3'/>
+
+and save the changes.
+----------------------------------------------
+
+
+3.copy the folder case1 in hdfs-----
+
+4.
+oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -run
+
+
+oozie job --oozie http://e2e-27-136.e2enetworks.net.in:11000/oozie -config /home/guptanayancy/case1/job.properties -info 
+ 0000004-170721155819487-oozie-oozi-W
+
+
+
+
+
